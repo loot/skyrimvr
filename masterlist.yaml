@@ -1885,11 +1885,8 @@ globals:
 groups:
   - name: &dlcGroup DLC
 
-  - name: &ccGroup Creation Club
-    after: [ *dlcGroup ]
-
   - name: &fixesGroup Fixes & Resources
-    after: [ *ccGroup ]
+    after: [ *dlcGroup ]
 
   - name: &earlyLoadersGroup Early Loaders
     after: [ *fixesGroup ]
