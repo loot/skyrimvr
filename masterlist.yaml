@@ -9325,9 +9325,6 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'SkyTEST - Realistic Animals and Predators' ]
         condition: 'active("SkyTEST-RealisticAnimals&Predators.esp") and not file("SAFO - SkyTEST RAP.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Survival Mode' ]
-        condition: 'active("ccqdrsse001-survivalmode.esp") and not active("SAFO - Survival Overhaul.esp")'
     dirty:
       - <<: *quickClean
         crc: 0x8BA8A5DF
