@@ -22040,8 +22040,6 @@ plugins:
   # Misc. Khajiit Speak Patches #
   - name: 'Khajiit Speak - .*\.esp'
     url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/32356/'
-        name: 'Khajiit Speak - Creation Club'
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/36488/'
         name: 'Khajiit Speak Extended Extended'
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/37024/'
