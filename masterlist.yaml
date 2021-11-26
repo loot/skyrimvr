@@ -2032,13 +2032,11 @@ plugins:
         condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not active("CACO_USSEP_Patch.esp") and not active("ccqdrsse001-survivalmode.esl")'
       - <<: *versionXofYorGreaterRequired
         subs:
-          - '1.6.318.0'
+          - '1.6.323.0'
           - 'Skyrim Special Edition'
-        condition: 'product_version("../SkyrimSE.exe", "1.6.318.0", <) and file("../SkyrimSE.exe") and not file("SkyrimVR.esm") and version("Unofficial Skyrim Special Edition Patch.esp", "4.2.6", >=)'
+        condition: 'product_version("../SkyrimSE.exe", "1.6.323.0", <) and file("../SkyrimSE.exe") and not file("SkyrimVR.esm") and version("Unofficial Skyrim Special Edition Patch.esp", "4.2.6a", >=)'
     clean:
-      - crc: 0x0CD1CA0B
-        util: 'SSEEdit v4.0.3g'
-      - crc: 0x25292C59
+      - crc: 0x7B6EB54A
         util: 'SSEEdit v4.0.4'
 
 ###### Fixes ######
@@ -6624,9 +6622,28 @@ plugins:
       - crc: 0xC0D9011C
         util: 'SSEEdit v4.0.3'
 
+  - name: 'ogEmperorCrab.esp'
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/58612/'
+        name: 'EMPEROR - Giant Crab Overhaul'
+    tag:
+      - ObjectBounds
+      - Sound
+    clean:
+      - crc: 0xBADDF592
+        util: 'SSEEdit v4.0.4'
+
   - name: 'ogFalkreathHauntings.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/20733/' ]
     # doNotClean
+
+  - name: 'ogSkinshifter.esp'
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/57631/'
+        name: 'Skinshifters - Forsworn Doppelgangers'
+    clean:
+      - crc: 0x9EC3EF59
+        util: 'SSEEdit v4.0.4'
 
   - name: 'Rebalanced Encounter Zones.*\.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/25/' ]
@@ -10982,7 +10999,11 @@ plugins:
     after: [ 'AmazingFollowerTweaks.esp' ]
 
   - name: 'nwsFollowerFramework.esp'
-    url: [ 'https://www.loverslab.com/files/file/6188-nethers-follower-framework/' ]
+    url:
+      - link: 'https://www.loverslab.com/files/file/6188-nethers-follower-framework/'
+        name: 'Nether''s Follower Framework (LoversLab)'
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/55653/'
+        name: 'Nether''s Follower Framework (Nexus Mods)'
     group: *followerFrameworksGroup
     after: [ 'Qw_BeyondReach_USSEP Patch.esp' ]
     req: [ *SKSE ]
@@ -11003,8 +11024,8 @@ plugins:
         subs: [ 'Immersive Horses' ]
         condition: 'active("Immersive Horses.esp")'
     clean:
-      - crc: 0x26679A4A
-        util: 'SSEEdit v4.0.3h (Hotfix 1)'
+      - crc: 0x8C2D69CF
+        util: 'SSEEdit v4.0.4'
 
   - name: 'SimpleFollowerManager.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/19940/' ]
@@ -14838,10 +14859,16 @@ plugins:
 
   - name: 'Unique Zephyr.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/16956/' ]
+    tag:
+      - Graphics
+      - ObjectBounds
+      - Stats
+      - Text
     clean:
-      # version: 1.0
       - crc: 0xFDE147EF
-        util: 'SSEEdit v4.0.2f'
+        util: 'SSEEdit v4.0.4'
+      - crc: 0x4FDC9DB0
+        util: 'SSEEdit v4.0.4'
 
   - name: 'Vikings Weaponry - Johnskyrim.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/14409/' ]
@@ -14919,14 +14946,23 @@ plugins:
         util: 'SSEEdit v4.0.0'
 
   - name: 'WZOblivionArtifacts.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/10644/' ]
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/10644/'
+        name: 'Oblivion Artifact Pack'
     msg:
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_OblivionArtifacts_Patch.esp")'
-    clean:
-      # version: 2C
-      - crc: 0xADC2AAFD
-        util: 'SSEEdit v4.0.3'
+    dirty:
+      - <<: *quickClean
+        crc: 0x5FD5D31C
+        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 31
+        udr: 3
+      - <<: *quickClean
+        crc: 0xF914361B
+        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 31
+        udr: 3
 
   - name: 'WZTamrielic Culture.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/11418/' ]
@@ -14936,6 +14972,29 @@ plugins:
     clean:
       - crc: 0x22A8658C
         util: 'SSEEdit v4.0.3'
+
+  - name: 'yumcheese.esp'
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/36506/'
+        name: 'Cheesemod for EVERYONE'
+    msg:
+      - <<: *wildEdits
+        subs: [ 'Remove the record 00083B04 & remove the XEZN subrecord from RiftenRatwayZone in 00016BCF.' ]
+        condition: 'checksum("yumcheese.esp", 8A36B7F3) or checksum("yumcheese.esp", A2F4FBDB)'
+    tag:
+      - Invent.Add
+      - Invent.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0x8A36B7F3
+        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 25
+        udr: 4
+      - <<: *quickClean
+        crc: 0x5FFDF5E1
+        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 25
+        udr: 4
 
   - name: 'ZIA_Ancient Pack_V4.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/9138/' ]
@@ -16869,7 +16928,9 @@ plugins:
         udr: 28
 
   - name: 'CollegeOfWinterholdImmersive.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/17004/' ]
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/17004/'
+        name: 'Immersive College of Winterhold'
     after:
       - 'Book Covers Skyrim.esp'
       - 'CollegeEntry.esp'
@@ -16883,6 +16944,16 @@ plugins:
       - 'TheWulfPanda - Faction Teleport Spells.esp'
       - 'TheWulfPanda - Faction Teleport Spells Less Magicka Increased Cast Time.esp'
     msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'Obscure''s College of Winterhold'
+          - '[Ultimate College of Winterhold](https://www.nexusmods.com/skyrimspecialedition/mods/44797/)'
+        condition: 'active("OCW_Obscure''s_CollegeofWinterhold.esp") and not active("UltimateCollege.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'The Gray Cowl Returns! (Creation Club)'
+          - '[Immersive College of Winterhold - More Patches](https://www.nexusmods.com/skyrimspecialedition/mods/28687/)'
+        condition: 'active("ccbgssse020-graycowl.esl") and not active("ICOW_GrayCowlCC_Patch.esp")'
       - *patch3rdParty_SRPC
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_ImmersiveCollegeofWinterhold_Patch.esp") and not active("UltimateCollege.esp") and (version("LegacyoftheDragonborn.esm", "5.0.24", >=) or (not checksum("LegacyoftheDragonborn.esm", 31563183) and not checksum("LegacyoftheDragonborn.esm", 6736FB94) and not checksum("LegacyoftheDragonborn.esm", CB82480D)))'
@@ -16907,16 +16978,13 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Skyrim Project Optimization Full ESM' ]
         condition: 'active("Skyrim Project Optimization - Full Version.esm") and not active("CWISPOPatchSE.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Obscure''s College of Winterhold'
-          - '[Ultimate College of Winterhold](https://www.nexusmods.com/skyrimspecialedition/mods/44797/)'
-        condition: 'active("OCW_Obscure''s_CollegeofWinterhold.esp") and not active("UltimateCollege.esp")'
     tag:
       - Actors.ACBS
       - Actors.AIData
       - Actors.AIPackages
       - Actors.CombatStyle
+      - Actors.Perks.Add
+      - Actors.Perks.Remove
       - Actors.Spells
       - Actors.Stats
       - C.Climate
@@ -16924,6 +16992,7 @@ plugins:
       - C.Light
       - C.Music
       - C.Owner
+      - C.Regions
       - C.Water
       - EnchantmentStats
       - Factions
@@ -16931,16 +17000,15 @@ plugins:
       - Invent.Add
       - Invent.Remove
       - Keywords
-      - Names
+      - NPC.AttackRace
       - NPC.Class
+      - NPC.DefaultOutfit
       - Outfits.Add
       - Stats
       - Text
-    dirty:
-      - <<: *quickClean
-        crc: 0x80E5FDAC
-        util: '[SSEEdit v4.0.3](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 1
+    clean:
+      - crc: 0x01E10725
+        util: 'SSEEdit v4.0.4'
 
   - name: 'COTN - Dawnstar.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/28952/' ]
@@ -17133,21 +17201,25 @@ plugins:
             text: 'Dieses Plugin weist auf einen Eintrag **000CB4F3** hin, der von Hearthfires.esm gelöscht wurde. Dies muss manuell vom Mod-Autor korrigiert werden.'
         condition: 'checksum("EEKs Immersive Whiterun.esp", 7CAB09F2) or checksum("EEKs Immersive Whiterun.esp", 16BF915D)'
 
-  - name: 'Enlightened College of Winterhold.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/8710/' ]
-    group: *earlyLoadersGroup
+  - name: 'Enhanced Solitude Docks.esp'
+    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/28349/' ]
+    after: [ 'Enhanced Solitude SSE.esp' ]
+    clean:
+      - crc: 0x1CE94209
+        util: 'SSEEdit v4.0.4'
 
   - name: 'Enhanced Solitude SSE.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/27816/' ]
     msg:
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_EnhancedSolitude_Patch.esp") and (version("LegacyoftheDragonborn.esm", "5.0.24", >=) or (not checksum("LegacyoftheDragonborn.esm", 31563183) and not checksum("LegacyoftheDragonborn.esm", 6736FB94) and not checksum("LegacyoftheDragonborn.esm", CB82480D)))'
-    dirty:
-      # version: 1.3
-      - <<: *quickClean
-        crc: 0x9A3E4FB8
-        util: '[SSEEdit v4.0.3](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 46
+    clean:
+      - crc: 0xEABAE5E2
+        util: 'SSEEdit v4.0.4'
+
+  - name: 'Enlightened College of Winterhold.esp'
+    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/8710/' ]
+    group: *earlyLoadersGroup
 
   - name: 'ETaC - (RESOURCES|Complete|Darkwater Crossing|Dawnstar|Kynesgrove|Riverwood|Rorikstead).*\.es(m|p)'
     url:
@@ -17884,6 +17956,78 @@ plugins:
     inc:
       - 'Blues Skyrim.esp'
       - 'ETaC - Complete.esp'
+
+  - name: 'JK''s Temple of Talos.esp'
+    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/56971/' ]
+    msg:
+      - <<: *patch3rdParty
+        subs:
+          - 'AI Overhaul'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("AI Overhaul.esp") and not active("JKs Temple of Talos - AI Overhaul patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Armor and Clothing Extension'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("JKs Temple of Talos - ACE Patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Cheesemod for EVERYONE'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("yumcheese.esp") and not active("JKs Temple of Talos - Cheesemod Patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Cloaks of Skyrim'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("Cloaks.esp") and not active("JKs Temple of Talos - Cloaks of Skyrim patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Enhanced Lights and FX'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("EnhancedLightsandFX.esp") and not active("JKs Temple of Talos - ELFX Patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Interesting NPCs'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("3DNPC.esp") and not active("JKs Temple of Talos - 3DNPC patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Oblivion Artifact Pack'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("WZOblivionArtifacts.esp") and not active("JKs Temple of Talos - Oblivion Artifacts patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Palaces and Castles Enhanced'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("Palaces Castles Enhanced.esp") and not active("JKs Temple of Talos - PCE patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Snazzy Furniture and Clutter Overhaul (SFCO)'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("Snazzy Furniture and Clutter Overhaul.esp") and not active("JKs Temple of Talos - SFCO patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Solitude and Temple Frescoes 2019'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("SolitudeTempleFrescoes.esp") and not active("JKs Temple of Talos - Solitude and Temple Frescoes Patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'The Elder Scrolls Online Imports'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("ESOimports.esp") and not active("JKs Temple of Talos - ESO Imports Patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Unofficial Skyrim Special Edition Patch'
+          - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
+        condition: 'active("Unofficial Skyrim Special Edition Patch.esp") and not active("JKs Temple of Talos - USSEP patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Window Shadows RT'
+          - '[Window Shadows - Patches for JK''s Interiors](https://www.nexusmods.com/skyrimspecialedition/mods/55309/)'
+        condition: 'active("Shadows.esp") and not active("JKs Temple of Talos - WS Patch.esp")'
+    clean:
+      - crc: 0x0C6BB768
+        util: 'SSEEdit v4.0.4'
 
   - name: 'JK''s The Bannered Mare.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/33845/' ]
@@ -19260,8 +19404,11 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 48
 
+  - name: 'Undriel_(QuaintRavenRock|QRR_Clockwork_Patch)\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/20851/'
+        name: 'Quaint Raven Rock'
   - name: 'Undriel_QuaintRavenRock.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/20851/' ]
     inc:
       - 'Raven Rock.esp'
       - 'SolstheimLighthouse.esp'
@@ -19271,19 +19418,40 @@ plugins:
       - <<: *includesX
         subs: [ 'The Raven of Raven Rock SE' ]
         condition: 'active("Undriel_Raven_of_RavenRock.esp") or active("Undriel_Raven_of_RavenRock.esl")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Nordic Jewelry (Creation Club)'
+          - '[Quaint Raven Rock Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35290/)'
+        condition: 'active("ccedhsse001-norjewel.esl") and not active("Quaint Raven Rock - Nordic Jewelry Patch.esp")'
+      - <<: *patch3rdParty
+        subs:
+          - 'Unofficial Skyrim Special Edition Patch'
+          - '[Quaint Raven Rock Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35290/)'
+        condition: 'active("Unofficial Skyrim Special Edition Patch.esp") and not active("Quaint Raven Rock - USSEP Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Clockwork' ]
         condition: 'active("Clockwork.esp") and not active("Undriel_QRR_Clockwork_Patch.esp")'
+      - <<: *patchUnavailable
+        subs: [ 'Ghosts of the Tribunal (Creation Club)' ]
+        condition: 'active("ccasvsse001-almsivi.esm")'
+      - <<: *patchUpdateAvailable
+        subs: [ '[Quaint Raven Rock Navm Cleaned and Optimized](https://www.nexusmods.com/skyrimspecialedition/mods/58041/)' ]
+        condition: 'active("Undriel_QuaintRavenRock.esp") and not file("Undriel_QRR Nav Fixed Patch.esp")'
     clean:
-      # version: 1.6
-      - crc: 0xEAEAF38B
-        util: 'SSEEdit v4.0.2f'
+      - crc: 0x0AFFAEEF
+        util: 'SSEEdit v4.0.4'
   - name: 'Undriel_QRR_Clockwork_Patch.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/20851/' ]
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/58041/'
+        name: 'Quaint Raven Rock Navm Cleaned and Optimized'
+    msg:
+      - <<: *patchUpdateAvailable
+        subs: [ '[Quaint Raven Rock Navm Cleaned and Optimized](https://www.nexusmods.com/skyrimspecialedition/mods/58041/)' ]
+        condition: 'checksum("Undriel_QRR_Clockwork_Patch.esp", 8A98BC76)'
     dirty:
       - <<: *reqManualFix
         crc: 0x8A98BC76
-        util: '[SSEEdit v4.0.3](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 1
 
   - name: 'Vaults of Skyrim (1.0 NEXUS|Palaces Patch)\.esp'
