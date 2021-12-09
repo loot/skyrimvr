@@ -10929,7 +10929,7 @@ plugins:
         util: 'SSEEdit v4.0.4b'
   - name: 'CW_Enjia.esp'
     msg:
-      - <<: *useVersion
+      - <<: *patchProvided
         subs: [ 'Open Cities Skyrim' ]
         condition: 'active("Open Cities Skyrim.esp") and checksum("CW_Enjia.esp", F9313512)'
     clean:
