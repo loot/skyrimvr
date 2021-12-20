@@ -1401,9 +1401,6 @@ plugins:
     group: *fixesGroup
     req: [ *SKSE ]
     msg:
-      - <<: *alsoUseX
-        subs: [ '[SkyUI SE - Flashing Savegames Fix](https://www.nexusmods.com/skyrimspecialedition/mods/20406/)' ]
-        condition: 'file("SkyUI_SE.bsa") and not file("SkyrimVR.esm") and not file("interface/quest_journal.swf")'
       - type: warn
         content:
           - lang: en
@@ -1726,11 +1723,8 @@ plugins:
       - <<: *requiresMCM
         condition: 'file("scripts/XPMSEMCM.pex") not active("SkyUI_SE.esp")'
       - <<: *requiresResources
-        subs: [ '[RaceMenu Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/19080/). Only install **skse/plugins/skee64.dll** and **skse/plugins/skee64.ini**, and **scripts/nioverride.pex** from **RaceMenu.BSA** when using Enhanced Character Edit or MCM Version of **XPMSE.esp**' ]
-        condition: 'checksum("XPMSE.esp", 776BAB77) and not file("SkyrimVR.esm") and (not file("scripts/nioverride.pex") or not file("skse/plugins/skee64.dll") or not file("skse/plugins/skee64.ini"))'
-      - <<: *requiresResources
         subs: [ '[RaceMenu Special Edition](https://www.nexusmods.com/skyrimspecialedition/mods/19080/). Only install **skse/plugins/skeevr.dll** and **skse/plugins/skeevr.ini**, and **scripts/nioverride.pex** from **RaceMenu.BSA** when using Enhanced Character Edit or MCM Version of **XPMSE.esp**' ]
-        condition: 'checksum("XPMSE.esp", 776BAB77) and file("SkyrimVR.esm") and (not file("scripts/nioverride.pex") or not file("skse/plugins/skeevr.dll") or not file("skse/plugins/skeevr.ini"))'
+        condition: 'checksum("XPMSE.esp", 776BAB77) and (not file("scripts/nioverride.pex") or not file("skse/plugins/skeevr.dll") or not file("skse/plugins/skeevr.ini"))'
 
 ###### AudioVisual - Models & Textures ######
   - name: 'AcolyteMasks\.es(l|p)'
@@ -11243,7 +11237,7 @@ plugins:
       - 'ShoutsCostOneSoul.esp'
     req:
       - <<: *SKSE
-        condition: 'not checksum("Skyrim Unbound.esp", BF3A39A9) and not checksum("Skyrim Unbound.esp", 4C621C50) and file("../SkyrimSE.exe") and not file("SkyrimVR.esm") and not file("../skse64_loader.exe")'
+        condition: 'not checksum("Skyrim Unbound.esp", BF3A39A9) and not checksum("Skyrim Unbound.esp", 4C621C50)'
       - name: 'Unofficial Skyrim Special Edition Patch.esp'
         display: '[Unofficial Skyrim Special Edition Patch](https://www.nexusmods.com/skyrimspecialedition/mods/266/)'
         condition: 'not checksum("Skyrim Unbound.esp", BF3A39A9) and not checksum("Skyrim Unbound.esp", 4C621C50)'
