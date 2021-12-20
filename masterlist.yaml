@@ -1825,7 +1825,7 @@ plugins:
 
   - name: 'JS Emissive Eyes SE - Johnskyrim.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/60108/' ]
-    msg: [ *requiresMCM_SkyUISE ]
+    msg: [ *requiresMCM ]
     tag:
       - Actors.Spells
       - R.AddSpells
