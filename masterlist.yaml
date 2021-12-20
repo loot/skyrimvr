@@ -507,7 +507,7 @@ globals:
     subs:
       - 'Skyrim Script Extender'
       - '[SKSE](https://skse.silverlock.org)'
-    condition: 'not file("scripts/skse.pex") and file("../sksevr_loader.exe")))'
+    condition: 'not file("scripts/skse.pex") and file("../sksevr_loader.exe")'
 
 # Animation Frameworks
   # Fores New Idles
