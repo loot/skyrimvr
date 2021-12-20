@@ -10944,11 +10944,11 @@ plugins:
         subs: [ 'Immersive Citizens - AI Overhaul' ]
         condition: 'active("Immersive Citizens - AI Overhaul.esp") and not active("CWR_IC_Patch.esp")'
       - <<: *patchProvided
-        subs: [ 'Open Cities Skyrim' ]
-        condition: 'active("Open Cities Skyrim.esp") and not active("CWR_OC_Patch.esp")'
-      - <<: *patchProvided
         subs: [ 'The Second Great War' ]
         condition: 'active("GreatWarSkyrim.esp") and not active("CWRepairSGW.esp")'
+      - <<: *useVersion
+        subs: [ 'Open Cities Skyrim' ]
+        condition: 'active("Open Cities Skyrim.esp") and not active("CWR_OC_Patch.esp")'
     clean:
       - crc: 0x388DAD91
         util: 'SSEEdit v4.0.4b'
