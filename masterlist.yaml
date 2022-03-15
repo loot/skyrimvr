@@ -7431,7 +7431,9 @@ plugins:
     msg: [ *patch3rdParty_SRPC_Redux ]
 
   - name: 'Master of Disguise - Special Edition.esp'
-    url: [ 'https://letsplaywithfire.com/releases/file/master-of-disguise/' ]
+    url:
+      - link: 'https://letsplaywithfire.com/releases/file/master-of-disguise/'
+        name: 'Master of Disguise'
     req: [ *SKSE ]
     msg:
       - <<: *alsoUseX
