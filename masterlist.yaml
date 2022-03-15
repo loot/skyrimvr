@@ -315,6 +315,12 @@ common:
     subs: [ '[ Modern Brawl Bug Fix ](https://www.nexusmods.com/skyrimspecialedition/mods/1473/)' ]
     condition: 'file("Modern Brawl Bug Fix.esp")'
 
+  # &missingRequirementXforPlugin
+  - &missingRequirementVRAddrLibforPlugin
+    <<: *missingRequirementXforPlugin
+    subs: [ '[VR Address Library](https://www.nexusmods.com/skyrimspecialedition/mods/58101/)' ]
+    condition: 'product_version("../SkyrimVR.exe", "1.4.15.0", ==) and not file("SKSE/Plugins/version-1-4-15-0.csv")'
+
   # &patch3rdParty
   - &patch3rdParty_AOOPH
     <<: *patch3rdParty
