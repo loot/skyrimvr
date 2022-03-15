@@ -7431,27 +7431,12 @@ plugins:
     msg: [ *patch3rdParty_SRPC_Redux ]
 
   - name: 'Master of Disguise - Special Edition.esp'
-    url: [ 'https://letsplaywithfire.com/releases/file/master-of-disguise/' ]
-    req: [ *SKSE ]
-    msg:
-      - <<: *alsoUseX
-        subs: [ '**[Bug Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/33261/)** OR **[Scrambled Bugs](https://www.nexusmods.com/skyrimspecialedition/mods/43532/)**' ]
-        condition: 'not file("SKSE/Plugins/BugFixesSSE.dll") and not file("DLLPlugins/ScrambledBugs.dll")'
-      - <<: *compatNotes
-        subs: [ 'https://wiki.fireundubh.com/mods/master-of-disguise#compatibility' ]
-      - *missingRequirementAddrLibforPlugin
-      - *requiresMCM
-    tag:
-      - Actors.DeathItem
-      - Factions
-      - -Names
-      - NPC.DefaultOutfit
-      - -ObjectBounds
-      - Outfits.Add
-      - Outfits.Remove
-    clean:
-      - crc: 0xF97D9D82
-        util: 'SSEEdit v4.0.4b'
+    url:
+      - link: 'https://letsplaywithfire.com/releases/file/master-of-disguise/'
+        name: 'Master of Disguise'
+    inc:
+      - name: '../SkyrimVR.exe'
+        display: 'Skyrim VR'
 
   - name: 'Open Cities Skyrim.esp'
     url:
