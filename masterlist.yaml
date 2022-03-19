@@ -701,17 +701,10 @@ plugins:
       - Keywords
     dirty:
       - <<: *quickClean
-        crc: 0x17AB5E20
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 334
-        udr: 92
-        nav: 3
-      - <<: *quickClean
-        crc: 0xD74CBABB
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 384
-        udr: 92
-        nav: 3
+        crc: 0xDE522C22
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 203
+        udr: 91
   - name: 'Dawnguard.esm'
     group: *dlcGroup
     tag:
@@ -722,24 +715,18 @@ plugins:
       - Invent.Remove
       - Relev
     msg:
-      # (V1.5.97.0, 0xADFC1487) after QAC, (V1.6.318.0, 0x8FA85074) after QAC, (V1.6.323.0, 0x51B6D677) after QAC
+      # (v1.4.15.0, 0x06537D98) after QAC
       - <<: *wildEdits
         type: say
         subs: [ '[Dawnguard.esm Wild Edits Cleaning Guide](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#AppendixBManuallyCleaningDawnguard)' ]
-        condition: 'checksum("Dawnguard.esm", ADFC1487) or checksum("Dawnguard.esm", 8FA85074) or checksum("Dawnguard.esm", 51B6D677)'
+        condition: 'checksum("Dawnguard.esm", 06537D98)'
     dirty:
       - <<: *quickClean
-        crc: 0xCC81E5D8
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 766
+        crc: 0x85E4F13D
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 773
         udr: 82
         nav: 57
-      - <<: *quickClean
-        crc: 0x329744A1
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 849
-        udr: 82
-        nav: 59
   - name: 'HearthFires.esm'
     group: *dlcGroup
     after: [ 'Dawnguard.esm' ]
@@ -748,14 +735,8 @@ plugins:
       - Invent.Add
     dirty:
       - <<: *quickClean
-        crc: 0xBAD9393A
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 221
-        udr: 11
-        nav: 5
-      - <<: *quickClean
-        crc: 0x77808289
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        crc: 0xC9662E10
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 221
         udr: 11
         nav: 5
@@ -772,20 +753,19 @@ plugins:
       - Text
     dirty:
       - <<: *quickClean
-        crc: 0x0EB10E82
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        crc: 0x0977457C
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 81
-        udr: 8
-        nav: 1
-      - <<: *quickClean
-        crc: 0x0AF226A7
-        util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 87
         udr: 8
         nav: 1
   - name: 'SkyrimVR.esm'
     group: *dlcGroup
     after: [ 'Dragonborn.esm' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD36F5D34
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 6
 
 ###### Unofficial Patches ######
   - name: 'Unofficial Skyrim Special Edition Patch.esp'
