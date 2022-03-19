@@ -699,6 +699,12 @@ plugins:
       - Invent.Add
       - Invent.Change
       - Keywords
+    dirty:
+      - <<: *quickClean
+        crc: 0xDE522C22
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 203
+        udr: 91
   - name: 'Dawnguard.esm'
     group: *dlcGroup
     tag:
@@ -708,12 +714,32 @@ plugins:
       - Invent.Add
       - Invent.Remove
       - Relev
+    msg:
+      # (v1.4.15.0, 0x06537D98) after QAC
+      - <<: *wildEdits
+        type: say
+        subs: [ '[Dawnguard.esm Wild Edits Cleaning Guide](https://tes5edit.github.io/docs/7-mod-cleaning-and-error-checking.html#AppendixBManuallyCleaningDawnguard)' ]
+        condition: 'checksum("Dawnguard.esm", 06537D98)'
+    dirty:
+      - <<: *quickClean
+        crc: 0x85E4F13D
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 773
+        udr: 82
+        nav: 57
   - name: 'HearthFires.esm'
     group: *dlcGroup
     after: [ 'Dawnguard.esm' ]
     tag:
       - C.Location
       - Invent.Add
+    dirty:
+      - <<: *quickClean
+        crc: 0xC9662E10
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 221
+        udr: 11
+        nav: 5
   - name: 'Dragonborn.esm'
     group: *dlcGroup
     after: [ 'HearthFires.esm' ]
@@ -725,9 +751,21 @@ plugins:
       - Invent.Add
       - Invent.Remove
       - Text
+    dirty:
+      - <<: *quickClean
+        crc: 0x0977457C
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 81
+        udr: 8
+        nav: 1
   - name: 'SkyrimVR.esm'
     group: *dlcGroup
     after: [ 'Dragonborn.esm' ]
+    dirty:
+      - <<: *quickClean
+        crc: 0xD36F5D34
+        util: '[TES5VREdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 6
 
 ###### Unofficial Patches ######
   - name: 'Unofficial Skyrim Special Edition Patch.esp'
