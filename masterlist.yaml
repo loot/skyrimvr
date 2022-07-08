@@ -2512,6 +2512,7 @@ plugins:
       - 'ELFX - Hardcore.esp'
       - 'Luminosity Lighting Overhaul.esp'
       - 'RLO - Interiors.esp'
+      - 'WSEnhancer.esp'
     tag:
       - C.ImageSpace
       - C.Light
