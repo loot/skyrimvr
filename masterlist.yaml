@@ -24563,16 +24563,6 @@ plugins:
         subs: [ '[SIC SE - Add-Ons and Patches](https://www.nexusmods.com/skyrimspecialedition/mods/54930/)' ]
         condition: 'version("Skyrim Immersive Creatures Special Edition.esp", "7.0.0", >=)'
 
-  ### Survival Mode Patch Collection ###
-  - name: 'Survival Mode Patches - AMB Content Addon.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/19154/'
-        name: 'Survival Mode Patch Collection'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ 'aMidianBorn Content Addon SE' ]
-        condition: 'active("aMidianBorn_ContentAddon.esp") and version("aMidianBorn_ContentAddon.esp", "2.0", >=)'
-
   ### Ultimate College of Winterhold: Mod & Patches ###
   # Main Mod #
   - name: 'UltimateCollege.esp'
