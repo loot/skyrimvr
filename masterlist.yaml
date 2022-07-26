@@ -8981,55 +8981,6 @@ plugins:
   - name: 'Priest Vendors - CLLF Integration.esp'
     req: [ 'Containers and Leveled Lists Fixes.esp' ]
 
-  - name: '(CrossbowIntegration|Thwack! - (Rare Curios - Bolts Expanded|Vigil Enforcer Distribution))\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/42653/'
-        name: 'Thwack - A Creation Club Integration Mod'
-  - name: 'CrossbowIntegration.esp'
-    tag:
-      - Actors.CombatStyle
-      - Delev
-      - Names
-      - ObjectBounds
-    dirty:
-      - <<: *quickClean
-        crc: 0x2D99DC99
-        util: '[SSEEdit v4.0.4b](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 1
-  - name: 'Thwack! - Rare Curios - Bolts Expanded.esp'
-    tag: [ Delev ]
-    clean:
-      - crc: 0x24B9A27A
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Thwack! - Vigil Enforcer Distribution.esp'
-    tag:
-      - -Invent.Remove
-      - NPC.DefaultOutfit
-    clean:
-      - crc: 0x5968600D
-        util: 'SSEEdit v4.0.4b'
-
-  - name: 'Dead Man''s Dread Distribution.*\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/35163/'
-        name: 'Pirate''s Life for Me - A Creation Club Integration Mod'
-  - name: 'Dead Man''s Dread Distribution.esp'
-    req:
-      - <<: *SPID
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-    tag:
-      - name: -Invent.Add
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-      - name: -Invent.Remove
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-      - name: -NPC.DefaultOutfit
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-      - name: -Relev
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-    clean:
-      - crc: 0x6BA45FE0
-        util: 'SSEEdit v4.0.4b'
-
   - name: 'DLCIntegration.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/8032/' ]
     group: *earlyLoadersGroup
@@ -9490,29 +9441,6 @@ plugins:
       - Stats
       - Text
 
-  - name: 'Netch Leather Distribution.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/45352/'
-        name: 'Morrowind Threads - A Creation Club Integration Mod'
-    req:
-      - <<: *SPID
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-    msg:
-      - <<: *sortMasters
-        condition: 'checksum("Netch Leather Distribution.esp", 86D4DE30)'
-    tag:
-      - Delev
-      - name: -Invent.Add
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-      - name: -Invent.Remove
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-      - name: -NPC.DefaultOutfit
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-      - ObjectBounds
-      - Outfits.Add
-      - Outfits.Remove
-      - Stats
-
   - name: 'Poverty.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/24712/' ]
     inc:
@@ -9532,14 +9460,6 @@ plugins:
         util: 'SSEEdit v4.0.3'
       - crc: 0xF20272B0
         util: 'SSEEdit v4.0.3'
-
-  - name: 'Rare Curios Integration.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/59340/'
-        name: 'Curated Curios - A Creation Club Integration Mod'
-    clean:
-      - crc: 0x2A3D845E
-        util: 'SSEEdit v4.0.4b'
 
   - name: 'Rebalanced Leveled Lists( - Lite)?\.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/26/' ]
@@ -9883,26 +9803,6 @@ plugins:
         crc: 0xDABA090F
         util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 4
-
-  - name: 'Vigil Enforcer Distribution.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/31991/'
-        name: 'The Vigilants'' New Clothes - A Creation Club Integration Mod'
-    req:
-      - <<: *SPID
-        condition: 'file("Vigil Enforcer Distribution_DISTRI.ini")'
-    tag:
-      - Actors.CombatStyle
-      - Delev
-      - -Invent.Remove
-      - Outfits.Add
-      - Outfits.Remove
-      - -Relev
-    clean:
-      - crc: 0xAE1949F3
-        util: 'SSEEdit v4.0.4b'
-      - crc: 0xFBAE5D3D
-        util: 'SSEEdit v4.0.4b'
 
   - name: 'Weapons Armor Clothing & Clutter Fixes.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/18994/' ]
@@ -11559,19 +11459,6 @@ plugins:
         util: '[SSEEdit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 1
 
-  - name: 'Orcish Orc Strongholds.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/58662/'
-        name: 'Orcish Orc Strongholds - Creation Club Orcish Armors Integrated'
-    tag:
-      - Delev
-      - NPC.DefaultOutfit
-    clean:
-      - crc: 0x81A2047C
-        util: 'SSEEdit v4.0.4b'
-      - crc: 0xBCFDBBC4
-        util: 'SSEEdit v4.0.4b'
-
   - name: 'Redoran Ebony.esp'
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/58249/'
@@ -12912,30 +12799,6 @@ plugins:
         crc: 0xADF5AB44
         util: '[SSEEdit v4.0.3](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 2
-
-  - name: 'Knight of the North( - LCO Patch)?\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/45869/'
-        name: 'Knight of the North - A Creation Club Quest Overhaul (Nexus Mods)'
-      - link: 'https://github.com/TateTaylorOH/Knight-of-the-North/'
-        name: 'Knight of the North - A Creation Club Quest Overhaul (GitHub)'
-  - name: 'Knight of the North.esp'
-    msg:
-      - <<: *patchIncluded
-        subs: [ 'Lawbringer (Stendarr''s Beacon)' ]
-        condition: 'active("LCO_StendarrsBeacon.esp") and not active("Knight of the North - LCO Patch.esp")'
-    tag:
-      - Enchantments
-      - Keywords
-      - Names
-      - Stats
-    clean:
-      - crc: 0x48CA3704
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Knight of the North - LCO Patch.esp'
-    clean:
-      - crc: 0x05860680
-        util: 'SSEEdit v4.0.4b'
 
   - name: 'konahrik_accoutrements.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/22206/' ]
@@ -15795,28 +15658,6 @@ plugins:
         crc: 0xA202F2E4
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 42
-
-  - name: '(RareCuriosBoltsExpanded|RCBE - Thwack Consistency Patch)\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/39903/'
-        name: 'Rare Curios - Bolts Expanded'
-  - name: 'RareCuriosBoltsExpanded.esp'
-    tag:
-      - Delev
-      - Graphics
-      - Keywords
-      - Names
-      - ObjectBounds
-      - Relev
-      - Stats
-      - Text
-    clean:
-      - crc: 0x620CEAB4
-        util: 'SSEEdit v4.0.4b'
-  - name: 'RCBE - Thwack Consistency Patch.esp'
-    msg:
-      - <<: *useInstead
-        subs: [ '[Thwack - A Creation Club Integration Mod (Thwack! - Rare Curios - Bolts Expanded.esp)](https://www.nexusmods.com/skyrimspecialedition/mods/42653/)' ]
 
   - name: 'RelicsofHyruleDragonborn.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/12244/' ]
