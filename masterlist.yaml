@@ -8457,7 +8457,7 @@ plugins:
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_CACO_Patch.esp")'
       - <<: *patch3rdParty_ClockA
-        condition: 'active("Clockwork.esp") and not active("ClockworkSuperiorSorting.esp") and not active("ClockworkSorting_Ing_CACO.esp") and not active("ClockworkSorting_Ing_CCCurios_CACO.esp") and not active("ClockworkSorting_Food_CACO.esp")'
+        condition: 'active("Clockwork.esp") and not active("ClockworkSuperiorSorting.esp") and not active("ClockworkSorting_Ing_CACO.esp") and not active("ClockworkSorting_Food_CACO.esp")'
       - *patch3rdParty_SRPC
       - <<: *patchProvided
         subs: [ 'Complete Crafting Overhaul Remastered' ]
@@ -23373,41 +23373,12 @@ plugins:
       - crc: 0x83840648
         util: 'SSEEdit v4.0.3'
   - name: 'ClockworkSorting_Ing_CACO.esp'
-    inc: [ 'ClockworkSorting_Ing_CCCurios.esp' ]
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ '"Additional Clockwork - Superior Sorting" (ClockworkSuperiorSorting.esp)' ]
         condition: 'active("ClockworkSuperiorSorting.esp")'
-      - <<: *alreadyInX
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
-      - <<: *useInstead
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CCCurios.esp") and not active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
     clean:
       - crc: 0xFC69BF72
-        util: 'SSEEdit v4.0.3'
-  - name: 'ClockworkSorting_Ing_CCCurios.esp'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '"Additional Clockwork - Superior Sorting" (ClockworkSuperiorSorting.esp)' ]
-        condition: 'active("ClockworkSuperiorSorting.esp")'
-      - <<: *alreadyInX
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
-      - <<: *useInstead
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CACO.esp") and not active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
-    clean:
-      - crc: 0x30BAFDF7
-        util: 'SSEEdit v4.0.3'
-  - name: 'ClockworkSorting_Ing_CCCurios_CACO.esp'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '"Additional Clockwork - Superior Sorting" (ClockworkSuperiorSorting.esp)' ]
-        condition: 'active("ClockworkSuperiorSorting.esp")'
-    clean:
-      - crc: 0x3297A568
         util: 'SSEEdit v4.0.3'
   # Additional Clockwork's High Poly Project Patches #
   - name: 'ClockworkHPPCoalsFix.esp'
