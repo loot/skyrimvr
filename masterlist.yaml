@@ -24251,21 +24251,8 @@ plugins:
       # version: 1.0
       - crc: 0x6B00626D
         util: 'SSEEdit v4.0.2f'
-  - name: 'CACO Rare Curios Patch.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'CACO_Bruma_Rare Curios_Patch.esp' ]
-        condition: 'active("CACO Rare Curios Patch.esp") and active("CACO_Bruma_Rare Curios_Patch.esp")'
-  - name: 'CACO_USSEP_Patch.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'CACO_Survival Mode_Patch.esp' ]
-        condition: 'active("CACO_USSEP_Patch.esp") and active("CACO_Survival Mode_Patch.esp")'
   # KPH Patches - Complete Crafting Overhaul Remastered #
-  - name: 'Cloaks_CCOR_Patch.esp'
-    inc: [ 'Survival Mode Patches - Winter Is Coming.esp' ]
   - name: '1nivWICCloaks(_COS)?_CCOR_Patch\.esp'
-    inc: [ 'Survival Mode Patches - Winter Is Coming.esp' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'CCOR & Winter Is Coming patch' ]
@@ -24342,12 +24329,6 @@ plugins:
     tag:
       - Delev
       - Graphics
-  - name: 'WACCF_Survival Mode_Patch.esp'
-    inc: [ 'Complete Alchemy & Cooking Overhaul.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Complete Alchemy & Cooking Overhaul - Survival Mode Patch' ]
-        condition: 'active("WACCF_Survival Mode_Patch.esp") and active("CACO_Survival Mode_Patch.esp")'
 
   ### (MPX) Modular PatchXpress ###
   # (MPX) Main Patches - Standard #
