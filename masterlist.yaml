@@ -799,7 +799,7 @@ plugins:
           - '[Circlet USSEP Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/35576/)'
         condition: 'checksum("meshes/armor/circlets/circletf1.nif", BC2EE889) and not file("meshes/uskp/armor/circlets/FemElfCirclets")'
       - <<: *patch3rdParty_KPH_CACO
-        condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not active("CACO_USSEP_Patch.esp") and not active("ccqdrsse001-survivalmode.esl")'
+        condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not active("CACO_USSEP_Patch.esp")'
       - <<: *versionXIncY
         subs:
           - 'Unofficial Skyrim Special Edition Patch'
@@ -7569,9 +7569,6 @@ plugins:
     after: [ 'Palaces Castles Enhanced.esp' ]
     msg:
       - <<: *patchProvided
-        subs: [ 'Bittercup' ]
-        condition: 'active("cckrtsse001_altar.esl") and not active("OCS + Bittercup Patch.esp")'
-      - <<: *patchProvided
         subs: [ 'Drinking fountains of Skyrim' ]
         condition: 'active("Drinking Fountains of Skyrim for SSE.esp") and not active("OCS + DFoS Comp Patch.esp")'
       - <<: *patchProvided
@@ -7580,9 +7577,6 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Skyrim Sewers' ]
         condition: 'active("SkyrimSewers.esp") and not active("OCS + Skyrim Sewers.esp")'
-      - <<: *patchProvided
-        subs: [ 'The Gray Cowl Returns!' ]
-        condition: 'active("ccbgssse020-graycowl.esl") and not active("OCS + Gray Cowl Returns Patch.esp")'
     tag: [ C.Owner ]
     clean:
       - crc: 0x1D344547
@@ -8363,15 +8357,6 @@ plugins:
         subs: [ 'Beyond Skyrim - Bruma' ]
         condition: 'active("BSHeartland.esm") and not active("Apothecary - Bruma Patch.esp")'
       - <<: *patchProvided
-        subs: [ 'Creation Club Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("Apothecary - Fishing Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Rare Curios' ]
-        condition: 'active("ccBGSSSE037-Curios.esl") and not active("Apothecary - Rare Curios Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Saints & Seducers' ]
-        condition: 'active("ccBGSSSE025-AdvDSGS.esm") and not active("Apothecary - Saints & Seducers Patch.esp")'
-      - <<: *patchProvided
         subs: [ 'Skyrim 3D Trees and Plants' ]
         condition: 'active("S3DTrees NextGenerationForests.esp") and not active("Apothecary - Skyrim 3D Trees and Plants Patch.esp")'
       - <<: *patchProvided
@@ -8413,12 +8398,6 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Beyond Skyrim - Bruma' ]
         condition: 'active("BSHeartland.esm") and not active("ApothecaryFood - Bruma Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("ApothecaryFood - Fishing Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Survival Mode' ]
-        condition: 'active("ccQDRSSE001-SurvivalMode.esl") and not active("ApothecaryFood - Survival Mode Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Skyrim 3D Trees and Plants' ]
         condition: 'active("S3DTrees NextGenerationForests.esp") and not active("ApothecaryFood - Skyrim 3D Trees and Plants Patch.esp")'
@@ -9007,13 +8986,6 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/42653/'
         name: 'Thwack - A Creation Club Integration Mod'
   - name: 'CrossbowIntegration.esp'
-    msg:
-      - <<: *patchIncluded
-        subs: [ 'Rare Curios - Bolts Expanded' ]
-        condition: 'active("RareCuriosBoltsExpanded.esp") and not active("Thwack! - Rare Curios - Bolts Expanded.esp")'
-      - <<: *patchIncluded
-        subs: [ 'The Vigilants'' New Clothes - A Creation Club Integration Mod' ]
-        condition: 'active("Vigil Enforcer Distribution.esp") and not active("Thwack! - Vigil Enforcer Distribution.esp")'
     tag:
       - Actors.CombatStyle
       - Delev
@@ -17358,16 +17330,6 @@ plugins:
         name: 'Carriage and Ferry Travel Overhaul'
     after: [ 'Immersive Citizens - AI Overhaul.esp' ]
     msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Creation Club Bittercup'
-          - '[Carriage Ferry Travel Overhaul (CFTO) Bittercup Fix](https://www.nexusmods.com/skyrimspecialedition/mods/60974/) or [CFTO Bittercup Compatibility Patch](https://www.nexusmods.com/skyrimspecialedition/mods/60587/)'
-        condition: 'active("cckrtsse001_altar.esl") and not active("JKs Skyrim.esp") and not active("CFTO bittercup fix.esp") and not active("CFTO_Bittercup_Patch.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Creation Club Bittercup & JK''s Skyrim'
-          - '[CFTO Bittercup Compatibility Patch - JK''s Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/60588/)'
-        condition: 'active("cckrtsse001_altar.esl") and active("JKs Skyrim.esp") and not active("CFTO_Bittercup_JKs_Skyrim_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dawnstar' ]
         condition: 'active("Dawnstar.esp") and not active("CFTO - Arthmoor Danwstar Patch.esp")'
@@ -18521,16 +18483,6 @@ plugins:
           - 'Skyrim Immersive Creatures'
           - '[Immersive College of Winterhold Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/67358/)'
         condition: 'active("Skyrim Immersive Creatures Special Edition.esp") and not active("ICOW - SIC Patch.esp") and not active("UltimateCollege.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'The Gray Cowl Returns! (Creation Club)'
-          - '[Immersive College of Winterhold Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/67358/)'
-        condition: 'active("ccbgssse020-graycowl.esl") and not active("ICOW_GrayCowlCC_Patch.esp") and not active("UltimateCollege.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Wild Horses (Creation Club)'
-          - '[Immersive College of Winterhold Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/67358/)'
-        condition: 'active("ccbgssse034-mntuni.esl") and not active("ICOW - CC - Wild Horses Patch.esp") and not active("UltimateCollege.esp")'
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_ImmersiveCollegeofWinterhold_Patch.esp") and not active("UltimateCollege.esp") and (version("LegacyoftheDragonborn.esm", "5.0.24", >=) or (not checksum("LegacyoftheDragonborn.esm", 31563183) and not checksum("LegacyoftheDragonborn.esm", 6736FB94) and not checksum("LegacyoftheDragonborn.esm", CB82480D)))'
       - <<: *patch3rdParty_RPC
@@ -19371,11 +19323,6 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/65676/'
         name: 'JK''s College of Winterhold'
     msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Goldbrand (Creation Club)'
-          - '[JK''s Guild HQ Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/61416/)'
-        condition: 'active("ccbgssse005-goldbrand.esl") and not active("JKs College of Winterhold - CC - Goldbrand Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Unofficial Skyrim Special Edition Patch'
@@ -21268,16 +21215,6 @@ plugins:
         condition: 'active("Undriel_Raven_of_RavenRock.esp") or active("Undriel_Raven_of_RavenRock.esl")'
       - <<: *patch3rdParty
         subs:
-          - 'Ghosts of the Tribunal (Creation Club)'
-          - '[Quaint Raven Rock - Ghosts of the Tribunal Patch](https://www.nexusmods.com/skyrimspecialedition/mods/59172/)'
-        condition: 'active("ccasvsse001-almsivi.esm") and not active("Quaint Raven Rock - (Ghosts of the Tribunal CC Patch|GotT - EL Patch)\.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Nordic Jewelry (Creation Club)'
-          - '[Quaint Raven Rock Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35290/)'
-        condition: 'active("ccedhsse001-norjewel.esl") and not active("Quaint Raven Rock - Nordic Jewelry Patch.esp")'
-      - <<: *patch3rdParty
-        subs:
           - 'Unofficial Skyrim Special Edition Patch'
           - '[Quaint Raven Rock Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35290/)'
         condition: 'active("Unofficial Skyrim Special Edition Patch.esp") and not active("Quaint Raven Rock - USSEP Patch.esp")'
@@ -21938,9 +21875,6 @@ plugins:
       - <<: *patchUnavailable
         subs: [ 'Badersee SE' ]
         condition: 'active("Badersee.esp")'
-      - <<: *patchUnavailable
-        subs: [ 'Creation Club Bloodchill Manor' ]
-        condition: 'active("cceejsse005-cave.esm")'
     tag: [ C.Location ]
     dirty:
       - <<: *quickClean
@@ -23853,9 +23787,6 @@ plugins:
         subs: [ 'Capital Whiterun Expansion' ]
         condition: 'active("SurWR.esp") and not active("DoS_MP_Whiterun_CWE.esp")'
       - <<: *patchIncluded
-        subs: [ 'CC Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("DoS_MP_Whiterun_Fishing.esp")'
-      - <<: *patchIncluded
         subs: [ 'Dynamic Things Alternative' ]
         condition: 'active("Dynamic Things Alternative.esp") and not active("DoS_MP_Whiterun_DynamicThingsAlternative.esp")'
       - <<: *patchIncluded
@@ -23894,9 +23825,6 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Capital Whiterun Expansion' ]
         condition: 'active("SurWR.esp") and not active("DoS_MP_Whiterun_JK_CWE.esp")'
-      - <<: *patchIncluded
-        subs: [ 'CC Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("DoS_MP_Whiterun_JK_Fishing.esp")'
       - <<: *patchIncluded
         subs: [ 'Darks Whiterun Market' ]
         condition: 'active("WhiterunMarket.esp") and not active("DoS_MP_Whiterun_JK_DWM.esp")'
@@ -25201,9 +25129,6 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/63355/'
         name: 'Rob''s Bug Fixes - Capital Whiterun Expansion'
     msg:
-      - <<: *patchIncluded
-        subs: [ 'Creation Club - Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("SurWR - Fishing.esp") and checksum("SurWR.esp", C1861BE4)'
       - <<: *patchUpdateAvailable
         subs: [ '[Rob''s Bug Fixes - Capital Whiterun Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/63355/)' ]
         condition: 'checksum("SurWR.esp", D96CF5BF)'
