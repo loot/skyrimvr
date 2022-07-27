@@ -1186,7 +1186,7 @@ plugins:
           - lang: en
             text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
         subs: [ '**scripts/ski_playerloadgamealias.pex**' ]
-        condition: 'file("scripts/ski_playerloadgamealias.pex") and checksum("scripts/ski_playerloadgamealias.pex", 8B234B3B)'
+        condition: 'file("scripts/ski_playerloadgamealias.pex") and checksum("scripts/ski_playerloadgamealias.pex", 2FAB6D39)'
     clean:
       - crc: 0x25A91503
         util: 'TES5VREdit v4.0.4'
