@@ -1174,7 +1174,10 @@ plugins:
   - name: 'SkyUI_SE.esp'
     url: [ 'https://github.com/Odie/skyui-vr/releases/' ]
     group: *fixesGroup
-    req: [ *SKSE ]
+    req:
+      - *SKSE
+      - name: 'SKSE/Plugins/skyrimvrtools.dll'
+        display: '[Skyrim VR Tools](https://www.nexusmods.com/skyrimspecialedition/mods/27782/)'
     msg:
       - type: warn
         content:
