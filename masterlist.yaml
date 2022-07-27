@@ -1172,7 +1172,9 @@ plugins:
         util: 'SSEEdit v4.0.3'
 
   - name: 'SkyUI_SE.esp'
-    url: [ 'https://github.com/Odie/skyui-vr/releases/' ]
+    url:
+      - link: 'https://github.com/Odie/skyui-vr/releases/'
+        name: 'SkyUI - VR (Github)'
     group: *fixesGroup
     req:
       - *SKSE
