@@ -476,6 +476,7 @@ bash_tags:
   - 'Keywords'
   - 'MustBeActiveIfImported'
   - 'Names'
+  - 'NoMerge'
   - 'NPC.AIPackageOverrides'
   - 'NPC.AttackRace'
   - 'NPC.Class'
