@@ -799,7 +799,7 @@ plugins:
           - '[Circlet USSEP Fixes](https://www.nexusmods.com/skyrimspecialedition/mods/35576/)'
         condition: 'checksum("meshes/armor/circlets/circletf1.nif", BC2EE889) and not file("meshes/uskp/armor/circlets/FemElfCirclets")'
       - <<: *patch3rdParty_KPH_CACO
-        condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not active("CACO_USSEP_Patch.esp") and not active("ccqdrsse001-survivalmode.esl")'
+        condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not active("CACO_USSEP_Patch.esp")'
       - <<: *versionXIncY
         subs:
           - 'Unofficial Skyrim Special Edition Patch'
@@ -4070,12 +4070,6 @@ plugins:
     clean:
       - crc: 0x0C8909A1
         util: 'SSEEdit v4.0.4b'
-  - name: 'PrinceandPauperRefine_CC_Cave.esp'
-    dirty:
-      - <<: *quickClean
-        crc: 0x654CCB95
-        util: '[SSEEdit v4.0.4b](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 2
   - name: 'PrinceandPauperRefine_MultipleAdoptions.esp'
     clean:
       - crc: 0x375D1FF5
@@ -7569,9 +7563,6 @@ plugins:
     after: [ 'Palaces Castles Enhanced.esp' ]
     msg:
       - <<: *patchProvided
-        subs: [ 'Bittercup' ]
-        condition: 'active("cckrtsse001_altar.esl") and not active("OCS + Bittercup Patch.esp")'
-      - <<: *patchProvided
         subs: [ 'Drinking fountains of Skyrim' ]
         condition: 'active("Drinking Fountains of Skyrim for SSE.esp") and not active("OCS + DFoS Comp Patch.esp")'
       - <<: *patchProvided
@@ -7580,9 +7571,6 @@ plugins:
       - <<: *patchProvided
         subs: [ 'Skyrim Sewers' ]
         condition: 'active("SkyrimSewers.esp") and not active("OCS + Skyrim Sewers.esp")'
-      - <<: *patchProvided
-        subs: [ 'The Gray Cowl Returns!' ]
-        condition: 'active("ccbgssse020-graycowl.esl") and not active("OCS + Gray Cowl Returns Patch.esp")'
     tag: [ C.Owner ]
     clean:
       - crc: 0x1D344547
@@ -8363,15 +8351,6 @@ plugins:
         subs: [ 'Beyond Skyrim - Bruma' ]
         condition: 'active("BSHeartland.esm") and not active("Apothecary - Bruma Patch.esp")'
       - <<: *patchProvided
-        subs: [ 'Creation Club Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("Apothecary - Fishing Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Rare Curios' ]
-        condition: 'active("ccBGSSSE037-Curios.esl") and not active("Apothecary - Rare Curios Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Saints & Seducers' ]
-        condition: 'active("ccBGSSSE025-AdvDSGS.esm") and not active("Apothecary - Saints & Seducers Patch.esp")'
-      - <<: *patchProvided
         subs: [ 'Skyrim 3D Trees and Plants' ]
         condition: 'active("S3DTrees NextGenerationForests.esp") and not active("Apothecary - Skyrim 3D Trees and Plants Patch.esp")'
       - <<: *patchProvided
@@ -8389,36 +8368,12 @@ plugins:
     clean:
       - crc: 0x5554A264
         util: 'SSEEdit v4.0.4b'
-  # Apothecary - Patches #
-  - name: 'Apothecary - Fishing Patch.esp'
-    tag: [ Delev ]
-    dirty:
-      - <<: *quickClean
-        crc: 0x206FAEB9
-        util: '[SSEEdit v4.0.4b](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 2
-  - name: 'Apothecary - Rare Curios Patch.esp'
-    tag:
-      - EffectStats
-      - Keywords
-      - Stats
-      - Text
-  - name: 'Apothecary - Saints & Seducers Patch.esp'
-    tag:
-      - EffectStats
-      - Keywords
   # Apothecary - Food and Drink Addon #
   - name: 'ApothecaryFood.esp'
     msg:
       - <<: *patchProvided
         subs: [ 'Beyond Skyrim - Bruma' ]
         condition: 'active("BSHeartland.esm") and not active("ApothecaryFood - Bruma Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("ApothecaryFood - Fishing Patch.esp")'
-      - <<: *patchProvided
-        subs: [ 'Creation Club Survival Mode' ]
-        condition: 'active("ccQDRSSE001-SurvivalMode.esl") and not active("ApothecaryFood - Survival Mode Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Skyrim 3D Trees and Plants' ]
         condition: 'active("S3DTrees NextGenerationForests.esp") and not active("ApothecaryFood - Skyrim 3D Trees and Plants Patch.esp")'
@@ -8436,13 +8391,6 @@ plugins:
     clean:
       - crc: 0x8040AB87
         util: 'SSEEdit v4.0.4b'
-  # Apothecary - Food and Drink Addon - Patches #
-  - name: 'ApothecaryFood - Fishing Patch.esp'
-    tag: [ Keywords ]
-  - name: 'ApothecaryFood - Survival Mode Patch.esp'
-    tag:
-      - Names
-      - Stats
 
   - name: 'Ars Metallica.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/321/' ]
@@ -8509,7 +8457,7 @@ plugins:
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_CACO_Patch.esp")'
       - <<: *patch3rdParty_ClockA
-        condition: 'active("Clockwork.esp") and not active("ClockworkSuperiorSorting.esp") and not active("ClockworkSorting_Ing_CACO.esp") and not active("ClockworkSorting_Ing_CCCurios_CACO.esp") and not active("ClockworkSorting_Food_CACO.esp")'
+        condition: 'active("Clockwork.esp") and not active("ClockworkSuperiorSorting.esp") and not active("ClockworkSorting_Ing_CACO.esp") and not active("ClockworkSorting_Food_CACO.esp")'
       - *patch3rdParty_SRPC
       - <<: *patchProvided
         subs: [ 'Complete Crafting Overhaul Remastered' ]
@@ -9002,62 +8950,6 @@ plugins:
   - name: 'Priest Vendors - CLLF Integration.esp'
     req: [ 'Containers and Leveled Lists Fixes.esp' ]
 
-  - name: '(CrossbowIntegration|Thwack! - (Rare Curios - Bolts Expanded|Vigil Enforcer Distribution))\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/42653/'
-        name: 'Thwack - A Creation Club Integration Mod'
-  - name: 'CrossbowIntegration.esp'
-    msg:
-      - <<: *patchIncluded
-        subs: [ 'Rare Curios - Bolts Expanded' ]
-        condition: 'active("RareCuriosBoltsExpanded.esp") and not active("Thwack! - Rare Curios - Bolts Expanded.esp")'
-      - <<: *patchIncluded
-        subs: [ 'The Vigilants'' New Clothes - A Creation Club Integration Mod' ]
-        condition: 'active("Vigil Enforcer Distribution.esp") and not active("Thwack! - Vigil Enforcer Distribution.esp")'
-    tag:
-      - Actors.CombatStyle
-      - Delev
-      - Names
-      - ObjectBounds
-    dirty:
-      - <<: *quickClean
-        crc: 0x2D99DC99
-        util: '[SSEEdit v4.0.4b](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
-        itm: 1
-  - name: 'Thwack! - Rare Curios - Bolts Expanded.esp'
-    tag: [ Delev ]
-    clean:
-      - crc: 0x24B9A27A
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Thwack! - Vigil Enforcer Distribution.esp'
-    tag:
-      - -Invent.Remove
-      - NPC.DefaultOutfit
-    clean:
-      - crc: 0x5968600D
-        util: 'SSEEdit v4.0.4b'
-
-  - name: 'Dead Man''s Dread Distribution.*\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/35163/'
-        name: 'Pirate''s Life for Me - A Creation Club Integration Mod'
-  - name: 'Dead Man''s Dread Distribution.esp'
-    req:
-      - <<: *SPID
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-    tag:
-      - name: -Invent.Add
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-      - name: -Invent.Remove
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-      - name: -NPC.DefaultOutfit
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-      - name: -Relev
-        condition: 'file("Dead Man''s Dread Distribution_DISTR.ini")'
-    clean:
-      - crc: 0x6BA45FE0
-        util: 'SSEEdit v4.0.4b'
-
   - name: 'DLCIntegration.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/8032/' ]
     group: *earlyLoadersGroup
@@ -9518,29 +9410,6 @@ plugins:
       - Stats
       - Text
 
-  - name: 'Netch Leather Distribution.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/45352/'
-        name: 'Morrowind Threads - A Creation Club Integration Mod'
-    req:
-      - <<: *SPID
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-    msg:
-      - <<: *sortMasters
-        condition: 'checksum("Netch Leather Distribution.esp", 86D4DE30)'
-    tag:
-      - Delev
-      - name: -Invent.Add
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-      - name: -Invent.Remove
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-      - name: -NPC.DefaultOutfit
-        condition: 'file("Netch Leather Distribution_DISTR.ini")'
-      - ObjectBounds
-      - Outfits.Add
-      - Outfits.Remove
-      - Stats
-
   - name: 'Poverty.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/24712/' ]
     inc:
@@ -9560,14 +9429,6 @@ plugins:
         util: 'SSEEdit v4.0.3'
       - crc: 0xF20272B0
         util: 'SSEEdit v4.0.3'
-
-  - name: 'Rare Curios Integration.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/59340/'
-        name: 'Curated Curios - A Creation Club Integration Mod'
-    clean:
-      - crc: 0x2A3D845E
-        util: 'SSEEdit v4.0.4b'
 
   - name: 'Rebalanced Leveled Lists( - Lite)?\.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/26/' ]
@@ -9740,84 +9601,6 @@ plugins:
     clean:
       - crc: 0x6DC97D7F
         util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - AA Ebony Armor.esp'
-    tag:
-      - Delev
-      - Keywords
-      - Names
-    clean:
-      - crc: 0x8C01559A
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - AA Iron Plate Armor.esp'
-    tag:
-      - Delev
-      - Keywords
-      - Names
-      - Outfits.Add
-      - Outfits.Remove
-    clean:
-      - crc: 0x9D0A3231
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - AA Leather Armor.esp'
-    tag:
-      - Delev
-      - Names
-      - Outfits.Add
-      - Outfits.Remove
-    clean:
-      - crc: 0x5CA899F7
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - AA Silver Armor.esp'
-    tag:
-      - Delev
-      - Invent.Add
-      - Invent.Remove
-      - NPC.DefaultOutfit
-      - Stats
-    clean:
-      - crc: 0xFC47974E
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - AA Steel Armor.esp'
-    tag:
-      - Delev
-      - Names
-    clean:
-      - crc: 0xC41C73E2
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - Crossbow Collection.esp'
-    tag:
-      - Actors.CombatStyle
-      - Delev
-      - Names
-      - NPC.DefaultOutfit
-    clean:
-      - crc: 0x0F1D564E
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - Dead Man''s Dread.esp'
-    inc: [ 'Dead Man''s Dread Distribution.esp' ]
-    tag:
-      - Actors.AIPackages
-      - Actors.DeathItem
-      - Delev
-      - Invent.Add
-      - Invent.Remove
-      - Names
-      - NPC.DefaultOutfit
-      - Outfits.Add
-      - Outfits.Remove
-    clean:
-      - crc: 0x66C07E13
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - Netch Leather Armor.esp'
-    inc: [ 'Netch Leather Distribution.esp' ]
-    tag:
-      - Delev
-      - Outfits.Add
-      - Outfits.Remove
-      - Stats
-    clean:
-      - crc: 0xDC7F80E6
-        util: 'SSEEdit v4.0.4b'
   - name: 'Tamrielic Distribution - Pirates Wield Cutlasses.esp'
     tag:
       - Actors.AIPackages
@@ -9827,27 +9610,6 @@ plugins:
       - NPC.DefaultOutfit
     clean:
       - crc: 0x882F442C
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - Rare Curios.esp'
-    inc: [ 'Rare Curios Integration.esp' ]
-    tag: [ Delev ]
-    clean:
-      - crc: 0x52C561EC
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - Rare Curios - Bolts Expanded.esp'
-    tag: [ Delev ]
-    clean:
-      - crc: 0x9AE75F13
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Tamrielic Distribution - Vigil Enforcer Armor.esp'
-    inc: [ 'Vigil Enforcer Distribution.esp' ]
-    tag:
-      - Actors.CombatStyle
-      - Delev
-      - Outfits.Add
-      - Outfits.Remove
-    clean:
-      - crc: 0xD95DEAEE
         util: 'SSEEdit v4.0.4b'
 
   - name: 'Trade & Barter.esp'
@@ -9911,26 +9673,6 @@ plugins:
         crc: 0xDABA090F
         util: '[SSEEdit v4.0.4](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 4
-
-  - name: 'Vigil Enforcer Distribution.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/31991/'
-        name: 'The Vigilants'' New Clothes - A Creation Club Integration Mod'
-    req:
-      - <<: *SPID
-        condition: 'file("Vigil Enforcer Distribution_DISTRI.ini")'
-    tag:
-      - Actors.CombatStyle
-      - Delev
-      - -Invent.Remove
-      - Outfits.Add
-      - Outfits.Remove
-      - -Relev
-    clean:
-      - crc: 0xAE1949F3
-        util: 'SSEEdit v4.0.4b'
-      - crc: 0xFBAE5D3D
-        util: 'SSEEdit v4.0.4b'
 
   - name: 'Weapons Armor Clothing & Clutter Fixes.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/18994/' ]
@@ -11587,19 +11329,6 @@ plugins:
         util: '[SSEEdit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 1
 
-  - name: 'Orcish Orc Strongholds.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/58662/'
-        name: 'Orcish Orc Strongholds - Creation Club Orcish Armors Integrated'
-    tag:
-      - Delev
-      - NPC.DefaultOutfit
-    clean:
-      - crc: 0x81A2047C
-        util: 'SSEEdit v4.0.4b'
-      - crc: 0xBCFDBBC4
-        util: 'SSEEdit v4.0.4b'
-
   - name: 'Redoran Ebony.esp'
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/58249/'
@@ -12940,30 +12669,6 @@ plugins:
         crc: 0xADF5AB44
         util: '[SSEEdit v4.0.3](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 2
-
-  - name: 'Knight of the North( - LCO Patch)?\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/45869/'
-        name: 'Knight of the North - A Creation Club Quest Overhaul (Nexus Mods)'
-      - link: 'https://github.com/TateTaylorOH/Knight-of-the-North/'
-        name: 'Knight of the North - A Creation Club Quest Overhaul (GitHub)'
-  - name: 'Knight of the North.esp'
-    msg:
-      - <<: *patchIncluded
-        subs: [ 'Lawbringer (Stendarr''s Beacon)' ]
-        condition: 'active("LCO_StendarrsBeacon.esp") and not active("Knight of the North - LCO Patch.esp")'
-    tag:
-      - Enchantments
-      - Keywords
-      - Names
-      - Stats
-    clean:
-      - crc: 0x48CA3704
-        util: 'SSEEdit v4.0.4b'
-  - name: 'Knight of the North - LCO Patch.esp'
-    clean:
-      - crc: 0x05860680
-        util: 'SSEEdit v4.0.4b'
 
   - name: 'konahrik_accoutrements.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/22206/' ]
@@ -15094,20 +14799,6 @@ plugins:
       - crc: 0xEFE74E03
         util: 'SSEEdit v4.0.2f'
 
-  - name: 'FishingGloves(Lite)?\.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/63197/' ]
-  - name: 'FishingGloves.esp'
-    tag:
-      - Invent.Add
-      - Outfits.Add
-    clean:
-      - crc: 0xF10D4208
-        util: 'SSEEdit v4.0.4b'
-  - name: 'FishingGlovesLite.esp'
-    clean:
-      - crc: 0xB2A172CE
-        util: 'SSEEdit v4.0.4b'
-
   - name: 'Fossilsyum.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/14107/' ]
     msg:
@@ -15823,28 +15514,6 @@ plugins:
         crc: 0xA202F2E4
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 42
-
-  - name: '(RareCuriosBoltsExpanded|RCBE - Thwack Consistency Patch)\.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/39903/'
-        name: 'Rare Curios - Bolts Expanded'
-  - name: 'RareCuriosBoltsExpanded.esp'
-    tag:
-      - Delev
-      - Graphics
-      - Keywords
-      - Names
-      - ObjectBounds
-      - Relev
-      - Stats
-      - Text
-    clean:
-      - crc: 0x620CEAB4
-        util: 'SSEEdit v4.0.4b'
-  - name: 'RCBE - Thwack Consistency Patch.esp'
-    msg:
-      - <<: *useInstead
-        subs: [ '[Thwack - A Creation Club Integration Mod (Thwack! - Rare Curios - Bolts Expanded.esp)](https://www.nexusmods.com/skyrimspecialedition/mods/42653/)' ]
 
   - name: 'RelicsofHyruleDragonborn.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/12244/' ]
@@ -17358,16 +17027,6 @@ plugins:
         name: 'Carriage and Ferry Travel Overhaul'
     after: [ 'Immersive Citizens - AI Overhaul.esp' ]
     msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Creation Club Bittercup'
-          - '[Carriage Ferry Travel Overhaul (CFTO) Bittercup Fix](https://www.nexusmods.com/skyrimspecialedition/mods/60974/) or [CFTO Bittercup Compatibility Patch](https://www.nexusmods.com/skyrimspecialedition/mods/60587/)'
-        condition: 'active("cckrtsse001_altar.esl") and not active("JKs Skyrim.esp") and not active("CFTO bittercup fix.esp") and not active("CFTO_Bittercup_Patch.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Creation Club Bittercup & JK''s Skyrim'
-          - '[CFTO Bittercup Compatibility Patch - JK''s Skyrim](https://www.nexusmods.com/skyrimspecialedition/mods/60588/)'
-        condition: 'active("cckrtsse001_altar.esl") and active("JKs Skyrim.esp") and not active("CFTO_Bittercup_JKs_Skyrim_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dawnstar' ]
         condition: 'active("Dawnstar.esp") and not active("CFTO - Arthmoor Danwstar Patch.esp")'
@@ -18521,16 +18180,6 @@ plugins:
           - 'Skyrim Immersive Creatures'
           - '[Immersive College of Winterhold Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/67358/)'
         condition: 'active("Skyrim Immersive Creatures Special Edition.esp") and not active("ICOW - SIC Patch.esp") and not active("UltimateCollege.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'The Gray Cowl Returns! (Creation Club)'
-          - '[Immersive College of Winterhold Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/67358/)'
-        condition: 'active("ccbgssse020-graycowl.esl") and not active("ICOW_GrayCowlCC_Patch.esp") and not active("UltimateCollege.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Wild Horses (Creation Club)'
-          - '[Immersive College of Winterhold Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/67358/)'
-        condition: 'active("ccbgssse034-mntuni.esl") and not active("ICOW - CC - Wild Horses Patch.esp") and not active("UltimateCollege.esp")'
       - <<: *patch3rdParty_LotD
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_ImmersiveCollegeofWinterhold_Patch.esp") and not active("UltimateCollege.esp") and (version("LegacyoftheDragonborn.esm", "5.0.24", >=) or (not checksum("LegacyoftheDragonborn.esm", 31563183) and not checksum("LegacyoftheDragonborn.esm", 6736FB94) and not checksum("LegacyoftheDragonborn.esm", CB82480D)))'
       - <<: *patch3rdParty_RPC
@@ -19371,11 +19020,6 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/65676/'
         name: 'JK''s College of Winterhold'
     msg:
-      - <<: *patch3rdParty
-        subs:
-          - 'Goldbrand (Creation Club)'
-          - '[JK''s Guild HQ Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/61416/)'
-        condition: 'active("ccbgssse005-goldbrand.esl") and not active("JKs College of Winterhold - CC - Goldbrand Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Unofficial Skyrim Special Edition Patch'
@@ -21268,16 +20912,6 @@ plugins:
         condition: 'active("Undriel_Raven_of_RavenRock.esp") or active("Undriel_Raven_of_RavenRock.esl")'
       - <<: *patch3rdParty
         subs:
-          - 'Ghosts of the Tribunal (Creation Club)'
-          - '[Quaint Raven Rock - Ghosts of the Tribunal Patch](https://www.nexusmods.com/skyrimspecialedition/mods/59172/)'
-        condition: 'active("ccasvsse001-almsivi.esm") and not active("Quaint Raven Rock - (Ghosts of the Tribunal CC Patch|GotT - EL Patch)\.esp")'
-      - <<: *patch3rdParty
-        subs:
-          - 'Nordic Jewelry (Creation Club)'
-          - '[Quaint Raven Rock Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35290/)'
-        condition: 'active("ccedhsse001-norjewel.esl") and not active("Quaint Raven Rock - Nordic Jewelry Patch.esp")'
-      - <<: *patch3rdParty
-        subs:
           - 'Unofficial Skyrim Special Edition Patch'
           - '[Quaint Raven Rock Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35290/)'
         condition: 'active("Unofficial Skyrim Special Edition Patch.esp") and not active("Quaint Raven Rock - USSEP Patch.esp")'
@@ -21938,9 +21572,6 @@ plugins:
       - <<: *patchUnavailable
         subs: [ 'Badersee SE' ]
         condition: 'active("Badersee.esp")'
-      - <<: *patchUnavailable
-        subs: [ 'Creation Club Bloodchill Manor' ]
-        condition: 'active("cceejsse005-cave.esm")'
     tag: [ C.Location ]
     dirty:
       - <<: *quickClean
@@ -23646,25 +23277,6 @@ plugins:
       - <<: *alreadyInOrFixedByBDSv3_0
         type: warn
 
-  - name: 'CFTO bittercup fix.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/60974/'
-        name: 'Carriage Ferry Travel Overhaul (CFTO) Bittercup Fix'
-    inc: [ 'CFTO_Bittercup_Patch.esp' ]
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '**CFTO_Bittercup_JKs_Skyrim_Patch.esp**' ]
-        condition: 'file("CFTO_Bittercup_JKs_Skyrim_Patch.esp")'
-
-  - name: 'CFTO_Bittercup_Patch.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/60587/'
-        name: 'CFTO Bittercup Compatibility Patch'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '**CFTO_Bittercup_JKs_Skyrim_Patch.esp**' ]
-        condition: 'file("CFTO_Bittercup_JKs_Skyrim_Patch.esp")'
-
   - name: 'CFTO_fix.esp'
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/52353/'
@@ -23761,41 +23373,12 @@ plugins:
       - crc: 0x83840648
         util: 'SSEEdit v4.0.3'
   - name: 'ClockworkSorting_Ing_CACO.esp'
-    inc: [ 'ClockworkSorting_Ing_CCCurios.esp' ]
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ '"Additional Clockwork - Superior Sorting" (ClockworkSuperiorSorting.esp)' ]
         condition: 'active("ClockworkSuperiorSorting.esp")'
-      - <<: *alreadyInX
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
-      - <<: *useInstead
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CCCurios.esp") and not active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
     clean:
       - crc: 0xFC69BF72
-        util: 'SSEEdit v4.0.3'
-  - name: 'ClockworkSorting_Ing_CCCurios.esp'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '"Additional Clockwork - Superior Sorting" (ClockworkSuperiorSorting.esp)' ]
-        condition: 'active("ClockworkSuperiorSorting.esp")'
-      - <<: *alreadyInX
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
-      - <<: *useInstead
-        subs: [ '"Additional Clockwork - CACO & Rare Curios Ingredient Sorting Patch" (ClockworkSorting_Ing_CCCurios_CACO.esp)' ]
-        condition: 'active("ClockworkSorting_Ing_CACO.esp") and not active("ClockworkSorting_Ing_CCCurios_CACO.esp")'
-    clean:
-      - crc: 0x30BAFDF7
-        util: 'SSEEdit v4.0.3'
-  - name: 'ClockworkSorting_Ing_CCCurios_CACO.esp'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ '"Additional Clockwork - Superior Sorting" (ClockworkSuperiorSorting.esp)' ]
-        condition: 'active("ClockworkSuperiorSorting.esp")'
-    clean:
-      - crc: 0x3297A568
         util: 'SSEEdit v4.0.3'
   # Additional Clockwork's High Poly Project Patches #
   - name: 'ClockworkHPPCoalsFix.esp'
@@ -23853,9 +23436,6 @@ plugins:
         subs: [ 'Capital Whiterun Expansion' ]
         condition: 'active("SurWR.esp") and not active("DoS_MP_Whiterun_CWE.esp")'
       - <<: *patchIncluded
-        subs: [ 'CC Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("DoS_MP_Whiterun_Fishing.esp")'
-      - <<: *patchIncluded
         subs: [ 'Dynamic Things Alternative' ]
         condition: 'active("Dynamic Things Alternative.esp") and not active("DoS_MP_Whiterun_DynamicThingsAlternative.esp")'
       - <<: *patchIncluded
@@ -23894,9 +23474,6 @@ plugins:
       - <<: *patchIncluded
         subs: [ 'Capital Whiterun Expansion' ]
         condition: 'active("SurWR.esp") and not active("DoS_MP_Whiterun_JK_CWE.esp")'
-      - <<: *patchIncluded
-        subs: [ 'CC Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("DoS_MP_Whiterun_JK_Fishing.esp")'
       - <<: *patchIncluded
         subs: [ 'Darks Whiterun Market' ]
         condition: 'active("WhiterunMarket.esp") and not active("DoS_MP_Whiterun_JK_DWM.esp")'
@@ -23963,14 +23540,6 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/67358/'
         name: 'Immersive College of Winterhold Patch Collection'
-  - name: 'ICOW - CC - Wild Horses Patch.esp'
-    clean:
-      - crc: 0x52EBA00C
-        util: 'SSEEdit v4.0.4b'
-  - name: 'ICOW_GrayCowlCC_Patch.esp'
-    clean:
-      - crc: 0x3033F1F9
-        util: 'SSEEdit v4.0.4b'
   - name: 'ICOW_KA_Patch.esp'
     clean:
       - crc: 0x0B5C4C9A
@@ -24507,21 +24076,8 @@ plugins:
       # version: 1.0
       - crc: 0x6B00626D
         util: 'SSEEdit v4.0.2f'
-  - name: 'CACO Rare Curios Patch.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'CACO_Bruma_Rare Curios_Patch.esp' ]
-        condition: 'active("CACO Rare Curios Patch.esp") and active("CACO_Bruma_Rare Curios_Patch.esp")'
-  - name: 'CACO_USSEP_Patch.esp'
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'CACO_Survival Mode_Patch.esp' ]
-        condition: 'active("CACO_USSEP_Patch.esp") and active("CACO_Survival Mode_Patch.esp")'
   # KPH Patches - Complete Crafting Overhaul Remastered #
-  - name: 'Cloaks_CCOR_Patch.esp'
-    inc: [ 'Survival Mode Patches - Winter Is Coming.esp' ]
   - name: '1nivWICCloaks(_COS)?_CCOR_Patch\.esp'
-    inc: [ 'Survival Mode Patches - Winter Is Coming.esp' ]
     msg:
       - <<: *useOnlyOneX
         subs: [ 'CCOR & Winter Is Coming patch' ]
@@ -24598,12 +24154,6 @@ plugins:
     tag:
       - Delev
       - Graphics
-  - name: 'WACCF_Survival Mode_Patch.esp'
-    inc: [ 'Complete Alchemy & Cooking Overhaul.esp' ]
-    msg:
-      - <<: *alreadyInX
-        subs: [ 'Complete Alchemy & Cooking Overhaul - Survival Mode Patch' ]
-        condition: 'active("WACCF_Survival Mode_Patch.esp") and active("CACO_Survival Mode_Patch.esp")'
 
   ### (MPX) Modular PatchXpress ###
   # (MPX) Main Patches - Standard #
@@ -24837,16 +24387,6 @@ plugins:
       - <<: *obsolete
         subs: [ '[SIC SE - Add-Ons and Patches](https://www.nexusmods.com/skyrimspecialedition/mods/54930/)' ]
         condition: 'version("Skyrim Immersive Creatures Special Edition.esp", "7.0.0", >=)'
-
-  ### Survival Mode Patch Collection ###
-  - name: 'Survival Mode Patches - AMB Content Addon.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/19154/'
-        name: 'Survival Mode Patch Collection'
-    msg:
-      - <<: *alreadyInOrFixedByX
-        subs: [ 'aMidianBorn Content Addon SE' ]
-        condition: 'active("aMidianBorn_ContentAddon.esp") and version("aMidianBorn_ContentAddon.esp", "2.0", >=)'
 
   ### Ultimate College of Winterhold: Mod & Patches ###
   # Main Mod #
@@ -25201,9 +24741,6 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/63355/'
         name: 'Rob''s Bug Fixes - Capital Whiterun Expansion'
     msg:
-      - <<: *patchIncluded
-        subs: [ 'Creation Club - Fishing' ]
-        condition: 'active("ccBGSSSE001-Fish.esm") and not active("SurWR - Fishing.esp") and checksum("SurWR.esp", C1861BE4)'
       - <<: *patchUpdateAvailable
         subs: [ '[Rob''s Bug Fixes - Capital Whiterun Expansion](https://www.nexusmods.com/skyrimspecialedition/mods/63355/)' ]
         condition: 'checksum("SurWR.esp", D96CF5BF)'
@@ -25211,13 +24748,6 @@ plugins:
       - crc: 0xD96CF5BF
         util: 'SSEEdit v4.0.4b'
       - crc: 0xC1861BE4
-        util: 'SSEEdit v4.0.4b'
-  - name: 'SurWR - Fishing.esp'
-    url:
-      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/63355/'
-        name: 'Rob''s Bug Fixes - Capital Whiterun Expansion'
-    clean:
-      - crc: 0xA7A3B1AB
         util: 'SSEEdit v4.0.4b'
 
   - name: 'JKs Skyrim - Rob''s Bug Fixes.esp'
