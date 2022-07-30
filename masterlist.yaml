@@ -9591,6 +9591,104 @@ plugins:
     clean:
       - crc: 0x6DC97D7F
         util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - AA Ebony Plate.esp'
+    tag:
+      - Delev
+      - Keywords
+      - Names
+    clean:
+      - crc: 0x07EE5121
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - AA Elven Hunter.esp'
+    tag:
+      - Invent.Add
+      - Invent.Remove
+      - Outfits.Add
+      - Outfits.Remove
+    dirty:
+      - <<: *quickClean
+        crc: 0xADDE7EBF
+        util: '[SSEEdit v4.0.4b](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 1
+  - name: 'Tamrielic Distribution - AA Iron.esp'
+    tag:
+      - Delev
+      - Keywords
+      - Names
+      - Outfits.Add
+      - Outfits.Remove
+    clean:
+      - crc: 0xEAF79546
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - AA Leather.esp'
+    tag:
+      - Delev
+      - Names
+      - Outfits.Add
+      - Outfits.Remove
+    clean:
+      - crc: 0x92BA1D4A
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - AA Silver.esp'
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - NPC.DefaultOutfit
+      - Stats
+    clean:
+      - crc: 0xFC47974E
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - AA Steel Soldier.esp'
+    tag:
+      - Delev
+      - Names
+    clean:
+      - crc: 0x236A3BE7
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Crossbow Collection.esp'
+    tag:
+      - Actors.CombatStyle
+      - Delev
+      - Names
+      - NPC.DefaultOutfit
+      - Stats
+    clean:
+      - crc: 0x4A4965D5
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Dead Man''s Dread.esp'
+    inc: [ 'Dead Man''s Dread Distribution.esp' ]
+    tag:
+      - Actors.AIPackages
+      - Actors.DeathItem
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+      - Names
+      - NPC.DefaultOutfit
+      - Outfits.Add
+      - Outfits.Remove
+    clean:
+      - crc: 0x66C07E13
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Ghosts Reduced Cut.esp'
+    tag:
+      - Delev
+      - Invent.Add
+      - Invent.Remove
+    clean:
+      - crc: 0x9AD6EE62
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Netch Leather Armor.esp'
+    inc: [ 'Netch Leather Distribution.esp' ]
+    tag:
+      - Delev
+      - Outfits.Add
+      - Outfits.Remove
+      - Stats
+    clean:
+      - crc: 0x740DDB6D
+        util: 'SSEEdit v4.0.4b'
   - name: 'Tamrielic Distribution - Pirates Wield Cutlasses.esp'
     tag:
       - Actors.AIPackages
@@ -9600,6 +9698,27 @@ plugins:
       - NPC.DefaultOutfit
     clean:
       - crc: 0x882F442C
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Rare Curios.esp'
+    inc: [ 'Rare Curios Integration.esp' ]
+    tag: [ Delev ]
+    clean:
+      - crc: 0x52C561EC
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Rare Curios - Bolts Expanded.esp'
+    tag: [ Delev ]
+    clean:
+      - crc: 0x39B3D46F
+        util: 'SSEEdit v4.0.4b'
+  - name: 'Tamrielic Distribution - Vigil Enforcer Armor.esp'
+    inc: [ 'Vigil Enforcer Distribution.esp' ]
+    tag:
+      - Actors.CombatStyle
+      - Delev
+      - Outfits.Add
+      - Outfits.Remove
+    clean:
+      - crc: 0x82A18ABC
         util: 'SSEEdit v4.0.4b'
 
   - name: 'Trade & Barter.esp'
