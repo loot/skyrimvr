@@ -8940,6 +8940,25 @@ plugins:
   - name: 'Priest Vendors - CLLF Integration.esp'
     req: [ 'Containers and Leveled Lists Fixes.esp' ]
 
+  - name: '(CrossbowIntegration|Thwack! - (Rare Curios - Bolts Expanded|Vigil Enforcer Distribution))\.esp'
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/42653/'
+        name: 'Thwack - A Creation Club Integration Mod'
+  - name: 'CrossbowIntegration.esp'
+    tag:
+      - -Invent.Add
+      - -Invent.Remove
+      - Names
+      - ObjectBounds
+      - -Relev
+    dirty:
+      - <<: *quickClean
+        crc: 0x60629D04
+        util: '[SSEEdit v4.0.4b](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
+        itm: 1
+  - name: 'Thwack! - (Rare Curios - Bolts Expanded|Vigil Enforcer Distribution)\.esp'
+    msg: [ *obsolete ]
+
   - name: 'DLCIntegration.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/8032/' ]
     group: *earlyLoadersGroup
