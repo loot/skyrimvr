@@ -41,6 +41,10 @@ prelude:
       type: warn
       content: 'When using **%1%**, it''s recommended that you deactivate or delete this ESP file but keep the resources (e.g. meshes, textures) installed with this mod.'
 
+    - &essentialFiles
+      type: warn
+      content: 'Another mod seems to be overwriting one of this mod''s essential files. Please ensure you''re using this mod''s version of %1% or a compatible version if available.'
+
     - &includesX
       type: say
       content: '%1% is included with this mod.'
@@ -1184,10 +1188,7 @@ plugins:
       - name: 'SKSE/Plugins/skyrimvrtools.dll'
         display: '[Skyrim VR Tools](https://www.nexusmods.com/skyrimspecialedition/mods/27782/)'
     msg:
-      - type: warn
-        content:
-          - lang: en
-            text: 'Another mod seems to be overwriting one of this module''s essential files. Please ensure you''re using this module''s version of %1%.'
+      - <<: *essentialFiles
         subs: [ '**scripts/ski_playerloadgamealias.pex**' ]
         condition: 'file("scripts/ski_playerloadgamealias.pex") and checksum("scripts/ski_playerloadgamealias.pex", 8B234B3B)'
     clean:
