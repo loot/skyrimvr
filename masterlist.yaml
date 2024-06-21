@@ -4730,7 +4730,7 @@ plugins:
       - 'Kayla_CharPreset.esp'
       - 'Lydia Face Preset 64bit.esp'
     msg:
-      - <<: &deactivateAfterCharacterCreation
+      - <<: *deactivateAfterCharacterCreation
         condition: 'active("AsharaSkyrimCharacterPresetsReplacer.esp")'
 
   - name: 'Better_Male_Presets.esp'
@@ -4738,7 +4738,7 @@ plugins:
     group: *fixesGroup
     inc: [ 'AsharaSkyrimCharacterPresetsReplacer.esp' ]
     msg:
-      - <<: &deactivateAfterCharacterCreation
+      - <<: *deactivateAfterCharacterCreation
         condition: 'active("Better_Male_Presets.esp")'
 
   - name: 'Kayla_CharPreset.esp'
@@ -4750,7 +4750,7 @@ plugins:
       - 'Lydia Face Preset 64bit.esp'
       - 'Severa_CharPreset.esp'
     msg:
-      - <<: &deactivateAfterCharacterCreation
+      - <<: *deactivateAfterCharacterCreation
         condition: 'active("Kayla_CharPreset.esp")'
 
   - name: 'Lagertha_CharPreset.esp'
@@ -4761,7 +4761,7 @@ plugins:
       - 'Lydia Face Preset 64bit.esp'
       - 'Severa_CharPreset.esp'
     msg:
-      - <<: &deactivateAfterCharacterCreation
+      - <<: *deactivateAfterCharacterCreation
         condition: 'active("Lagertha_CharPreset.esp")'
 
   - name: 'Lydia Face Preset 64bit.esp'
@@ -4773,7 +4773,7 @@ plugins:
       - 'Lagertha_CharPreset.esp'
       - 'Severa_CharPreset.esp'
     msg:
-      - <<: &deactivateAfterCharacterCreation
+      - <<: *deactivateAfterCharacterCreation
         condition: 'active("Lydia Face Preset 64bit.esp")'
 
 ###### Encounters - Allies ######
@@ -8745,7 +8745,7 @@ plugins:
       - Graphics
   - name: 'SAFO - Valdacil.esp'
     msg:
-      - <<: &obsolete
+      - <<: *patchOutdated
         condition: 'checksum("SAFO - Valdacil.esp", DE73CDD3)'
   - name: 'SAFO - Wounds.esp'
     req: [ 'SAFO.esp' ]
@@ -15099,7 +15099,7 @@ plugins:
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_ImmersiveJewelry_Patch.esp")'
       - <<: *patch3rdParty_KPH_CCOR
         condition: 'active("Complete Crafting Overhaul_Remastered.esp") and not active("Immersive Jewelry_CCOR_Patch.esp")'
-      - <<: &obsolete
+      - <<: *obsolete
         condition: 'version("Immersive Jewelry.esp", "1.05", ==)'
     tag:
       - Delev
