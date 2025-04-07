@@ -2677,7 +2677,7 @@ plugins:
         subs:
           - 'Alternate Start - Live Another Life'
           - '[ELFX Hardcore - Alternate Start Void Fix](https://www.nexusmods.com/skyrimspecialedition/mods/34941) **OR** [LiveAnotherLife - ELFX Hardcore Patch](https://www.nexusmods.com/skyrimspecialedition/mods/38543/)'
-        condition: 'active("Alternate Start - Live Another Life.esp") and not active("Alternate Start ELFX Fix.esp") and not active("LiveAnotherLife - ELFX Hardcore.esp")'
+        condition: 'active("alternate start - live another life.esp") and not active("Alternate Start ELFX Fix.esp") and not active("LiveAnotherLife - ELFX Hardcore.esp")'
     tag:
       - C.ImageSpace
       - C.Light
@@ -4804,7 +4804,7 @@ plugins:
         condition: 'active("AI Overhaul.esp") and not active("3DNPC - AI Overhaul Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Alternate Start' ]
-        condition: 'active("Alternate Start - Live Another Life.esp") and not active("3DNPC Alternative Locations.esp")'
+        condition: 'active("alternate start - live another life.esp") and not active("3DNPC Alternative Locations.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Karthwasten' ]
         condition: 'active("Karthwasten.esp") and not active("3DNPC - Arth Karthwasten Patch.esp")'
@@ -6642,7 +6642,7 @@ plugins:
     msg:
       - <<: *patchProvided
         subs: [ 'Alternate Start' ]
-        condition: 'active("Alternate Start - Live Another Life.esp") and not (active("Landscape Fixes For Grass mods - Alternate start Locations.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("alternate start - live another life.esp") and not (active("Landscape Fixes For Grass mods - Alternate start Locations.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dragon Bridge' ]
         condition: 'active("Dragon Bridge.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -7896,23 +7896,23 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/20140/'
         name: 'Die Leute von Himmelsrand (The People Of Skyrim Complete) DV'
     inc: [ 'Holds.esp' ]
-    after: [ 'Alternate Start - Live Another Life.esp' ]
+    after: [ 'alternate start - live another life.esp' ]
     msg:
       - <<: *patch3rdParty
         subs:
           - 'Alternate Start - Live Another Life'
           - '[Alternate Start Patch for The People of Skyrim Complete](https://www.nexusmods.com/skyrimspecialedition/mods/13902/)'
-        condition: 'active("Alternate Start - Live Another Life.esp") and not active("Falskaar.esm") and not active("tpos_altstart_02.esp")'
+        condition: 'active("alternate start - live another life.esp") and not active("Falskaar.esm") and not active("tpos_altstart_02.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Falskaar'
           - '[The People of Skyrim Complete Falskaar Patch](https://www.nexusmods.com/skyrimspecialedition/mods/13906/)'
-        condition: 'active("Falskaar.esm") and not active("Alternate Start - Live Another Life.esp") and not active("tposc_falskar_patch.esp")'
+        condition: 'active("Falskaar.esm") and not active("alternate start - live another life.esp") and not active("tposc_falskar_patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Alternate Start - Live Another Life & Falskaar'
           - '[The People of Skyrim Complete Falskaar Patch](https://www.nexusmods.com/skyrimspecialedition/mods/13906/)'
-        condition: 'active("Falskaar.esm") and active("Alternate Start - Live Another Life.esp") and not active("tpos_altstart_falskaar_Patch.esp")'
+        condition: 'active("Falskaar.esm") and active("alternate start - live another life.esp") and not active("tpos_altstart_falskaar_Patch.esp")'
     clean:
       # English
       - crc: 0x296BE8A1
@@ -11689,7 +11689,7 @@ plugins:
   - name: 'Misc Dialogue Edits.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/28904/' ]
     after:
-      - 'Alternate Start - Live Another Life.esp'
+      - 'alternate start - live another life.esp'
       - 'Immersive Citizens - AI Overhaul.esp'
       - 'Relationship Dialogue Overhaul.esp'
   - name: 'More Dialogue Options.esp'
@@ -12028,7 +12028,7 @@ plugins:
       - crc: 0x5F9D4BF0
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Alternate Start - Live Another Life.esp'
+  - name: 'alternate start - live another life.esp'
     url:
       - link: 'https://www.afkmods.com/index.php?/files/file/1889-alternate-start-live-another-life/'
         name: 'Alternate Start - Live Another Life (AFK Mods)'
@@ -12195,7 +12195,7 @@ plugins:
         condition: 'active("QuestsAreInSkyrimUSSEP.esp") and not active("EBQO_QAIS-USSEP_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Alternate Start - Live Another Life' ]
-        condition: 'active("Alternate Start - Live Another Life.esp") and not active("BetterQuestObjectives-AlternateStartPatch.esp")'
+        condition: 'active("alternate start - live another life.esp") and not active("BetterQuestObjectives-AlternateStartPatch.esp")'
       - <<: *patchIncluded
         subs: [ 'Amazing Follower Tweaks or Immersive Amazing Follower Tweaks' ]
         condition: 'active("AmazingFollowerTweaks.esp") and not active("BetterQuestObjectives-AFTPatch.esp")'
@@ -12872,7 +12872,7 @@ plugins:
   - name: 'notice board - better solstheim quests.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/15829/' ]
     after:
-      - 'Alternate Start - Live Another Life.esp'
+      - 'alternate start - live another life.esp'
       - 'Immersive Wenches.esp'
     tag: [ Keywords ]
     clean:
@@ -12994,7 +12994,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/18223/'
         name: 'Realm of Lorkhan - Freeform Alternate Start'
-    inc: [ 'Alternate Start - Live Another Life.esp' ]
+    inc: [ 'alternate start - live another life.esp' ]
     tag:
       - Actors.AIPackages
       - Actors.Spells
@@ -13113,7 +13113,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/27962/' ]
     group: *altStartGroup
     inc:
-      - 'Alternate Start - Live Another Life.esp'
+      - 'alternate start - live another life.esp'
       - 'Daggerfall.esp'
       - 'DragonRemains_SSE.esp'
       - 'NotSoFast-MainQuest.esp'
@@ -19667,7 +19667,7 @@ plugins:
         util: '[SSEEdit v4.0.3f](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 1
   - name: 'JKs_The_Winking_Skeever_AlternateStartMods.esp'
-    after: [ 'Alternate Start - Live Another Life.esp' ]
+    after: [ 'alternate start - live another life.esp' ]
 
   - name: 'JKs Whiterun.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/2259/' ]
@@ -19927,7 +19927,7 @@ plugins:
       - crc: 0xAADE46FC
         util: 'SSEEdit v4.0.3'
   - name: 'MCWT_MageLightMaintenance.esp'
-    after: [ 'Alternate Start - Live Another Life.esp' ]
+    after: [ 'alternate start - live another life.esp' ]
     inc:
       - 'CollegeEntry.esp'
       - 'CollegeOfWinterholdImmersive.esp'
@@ -23617,7 +23617,7 @@ plugins:
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/37315/'
         name: 'Alternate Start - No More Blinkenlights'
-    req: [ 'Alternate Start - Live Another Life.esp' ]
+    req: [ 'alternate start - live another life.esp' ]
 
   - name: 'BDS - MM Patch.esp'
     url:
