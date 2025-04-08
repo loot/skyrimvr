@@ -2982,7 +2982,7 @@ plugins:
         condition: 'active("Northern Marsh Bridges SE.esp") and not active("LoS II - Northern Marsh Bridges patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Oakwood' ]
-        condition: 'active("Oakwood.esp") and not active("LoS II - Oakwood patch.esp")'
+        condition: 'active("oakwood.esp") and not active("LoS II - Oakwood patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Old Hroldan Ruins' ]
         condition: 'active("OldHroldanRuins.esp") and not active("LoS II - Old Hroldan Ruins patch.esp")'
@@ -4250,7 +4250,7 @@ plugins:
         condition: 'active("MoonAndStar_MAS.esp") and not active("MoonAndStar_MAS TKAA Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Oakwood' ]
-        condition: 'active("Oakwood.esp") and not active("Oakwood TKAA Patch.esp")'
+        condition: 'active("oakwood.esp") and not active("Oakwood TKAA Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Rigmor of Bruma' ]
         condition: 'active("Rigmor.esp") and not active("Rigmor Bruma TKAA Patch.esp")'
@@ -6233,7 +6233,7 @@ plugins:
         subs:
           - 'Arthmoor''s Oakwood'
           - '[Ancient Land Patches](https://www.nexusmods.com/skyrimspecialedition/mods/54140/)'
-        condition: 'active("Oakwood.esp") and not active("AncientLand-Oakwood.esp")'
+        condition: 'active("oakwood.esp") and not active("AncientLand-Oakwood.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Beginner''s Shack in Riverwood'
@@ -6654,7 +6654,7 @@ plugins:
         condition: 'active("ivarstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Ivarstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Oakwood' ]
-        condition: 'active("Oakwood.esp") and not (active("Landscape For Grass Mods - Oakwood PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("oakwood.esp") and not (active("Landscape For Grass Mods - Oakwood PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Rorikstead' ]
         condition: 'active("Rorikstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Rorikstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -6853,7 +6853,7 @@ plugins:
         subs:
           - 'Oakwood'
           - '[Realistic Boat Bobbing Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/44311/)'
-        condition: 'active("Oakwood.esp") and not active("RBB - Oakwood Patch.esp")'
+        condition: 'active("oakwood.esp") and not active("RBB - Oakwood Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Quaint Raven Rock'
@@ -7852,7 +7852,7 @@ plugins:
         condition: 'active("Immersive Citizens - TC patch.esp") and active("Immersive Citizens - TC patch.esp") and not active("TouringCarriages-ICAIO.esp")'
       - <<: *patchProvided
         subs: [ 'Oakwood' ]
-        condition: 'active("Oakwood.esp") and not active("TouringCarriages-Oakwood.esp")'
+        condition: 'active("oakwood.esp") and not active("TouringCarriages-Oakwood.esp")'
     tag:
       - C.Location
       - Keywords
@@ -19987,15 +19987,15 @@ plugins:
         util: '[SSEEdit v4.0.3](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 26
 
-  - name: 'Oakwood.esp'
+  - name: 'oakwood.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2178-oakwood/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4117042/'
     after:
       - name: 'Storefront.esp'
-        condition: '(is_master("Storefront.esp") and is_master("Oakwood.esp")) or (not is_master("Storefront.esp") and not is_master("Oakwood.esp"))'
+        condition: '(is_master("Storefront.esp") and is_master("oakwood.esp")) or (not is_master("Storefront.esp") and not is_master("oakwood.esp"))'
       - name: 'TouringCarriages-Oakwood.esp'
-        condition: '(is_master("TouringCarriages-Oakwood.esp") and is_master("Oakwood.esp")) or (not is_master("TouringCarriages-Oakwood.esp") and not is_master("Oakwood.esp"))'
+        condition: '(is_master("TouringCarriages-Oakwood.esp") and is_master("oakwood.esp")) or (not is_master("TouringCarriages-Oakwood.esp") and not is_master("oakwood.esp"))'
     inc: [ 'Lakeview_Extended.esp' ]
     clean:
       - crc: 0xC96DCE2B
