@@ -23135,7 +23135,7 @@ plugins:
         util: '[SSEEdit v4.0.2f](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 39
 
-  - name: 'Shadowmarks.esp'
+  - name: 'shadowmarks.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1907-shadowmarks/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2941238/'
