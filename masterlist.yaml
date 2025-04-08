@@ -17131,7 +17131,7 @@ plugins:
       - crc: 0x51F9FAE2
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Bee Hives.esp'
+  - name: 'bee hives.esp'
     url: [ 'https://www.afkmods.com/index.php?/files/file/1891-bee-hives/' ]
     group: *earlyLoadersGroup
     clean:
