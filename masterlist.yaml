@@ -4241,7 +4241,7 @@ plugins:
         condition: 'active("3DNPC.esp") and not active("3DNPC TKAA Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Keld-Nar' ]
-        condition: 'active("Keld-Nar.esp") and not active("Keld-Nar TKAA Patch.esp")'
+        condition: 'active("keld-nar.esp") and not active("Keld-Nar TKAA Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Legacy of the Dragonborn' ]
         condition: 'active("LegacyoftheDragonborn.esm") and not active("LegacyoftheDragonborn TKAA Patch.esp")'
@@ -19733,19 +19733,19 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 3
 
-  - name: 'Keld-Nar.esp'
+  - name: 'keld-nar.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2039-keld-nar/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4047950/'
     after:
       - name: 'Clockwork.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
       - name: 'Complete Alchemy & Cooking Overhaul.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
       - name: 'Landscape Fixes For Grass Mods.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
       - name: 'Watchtowers of Skyrim.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
     msg:
       - <<: *patchProvided
         subs: [ 'Clockwork' ]
