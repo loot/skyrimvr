@@ -2970,7 +2970,7 @@ plugins:
         condition: 'active("karthwasten.esp") and not active("LoS II - Karthwasten patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Kynesgrove' ]
-        condition: 'active("Kynesgrove.esp") and not active("LoS II - Kynesgrove patch.esp")'
+        condition: 'active("kynesgrove.esp") and not active("LoS II - Kynesgrove patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Legacy of the Dragonborn' ]
         condition: 'active("LegacyoftheDragonborn.esm") and not active("LoS II - LotD patch.esp")'
@@ -4810,7 +4810,7 @@ plugins:
         condition: 'active("karthwasten.esp") and not active("3DNPC - Arth Karthwasten Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Kynesgrove' ]
-        condition: 'active("Kynesgrove.esp") and not active("3DNPC - Arth Kynesgrove Patch.esp")'
+        condition: 'active("kynesgrove.esp") and not active("3DNPC - Arth Kynesgrove Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Cutting Room Floor' ]
         condition: 'active("cutting room floor.esp") and not active("3DNPC - CRF Patch.esp")'
@@ -19766,13 +19766,13 @@ plugins:
       - crc: 0x72C2348A
         util: 'SSEEdit v4.0.4'
 
-  - name: 'Kynesgrove.esp'
+  - name: 'kynesgrove.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1902-kynesgrove/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2948900/'
     after:
       - name: 'SkyrimReputation_SSE.esp'
-        condition: '(is_master("SkyrimReputation_SSE.esp") and is_master("Kynesgrove.esp")) or (not is_master("SkyrimReputation_SSE.esp") and not is_master("Kynesgrove.esp"))'
+        condition: '(is_master("SkyrimReputation_SSE.esp") and is_master("kynesgrove.esp")) or (not is_master("SkyrimReputation_SSE.esp") and not is_master("kynesgrove.esp"))'
     clean:
       - crc: 0x25C25727
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
