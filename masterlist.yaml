@@ -3009,7 +3009,7 @@ plugins:
         condition: 'active("Solitude Expansion.esp") and not active("LoS II - Solitude Expansion patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Soljund''s Sinkhole' ]
-        condition: 'active("Soljund''s Sinkhole.esp") and not active("LoS II - Soljund''s Sinkhole patch.esp")'
+        condition: 'active("soljund''s sinkhole.esp") and not active("LoS II - Soljund''s Sinkhole patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Telengard' ]
         condition: 'active("Telengard.esp") and not active("LoS II - Telengard patch.esp")'
@@ -17857,8 +17857,8 @@ plugins:
   - name: 'Settlements Expanded SE.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/7777/' ]
     after:
-      - name: 'Soljund''s Sinkhole.esp'
-        condition: '(is_master("Soljund''s Sinkhole.esp") and is_master("Settlements Expanded SE.esp")) or (not is_master("Soljund''s Sinkhole.esp") and not is_master("Settlements Expanded SE.esp"))'
+      - name: 'soljund''s sinkhole.esp'
+        condition: '(is_master("soljund''s sinkhole.esp") and is_master("Settlements Expanded SE.esp")) or (not is_master("soljund''s sinkhole.esp") and not is_master("Settlements Expanded SE.esp"))'
       - name: 'Whistling Mine.esp'
         condition: '(is_master("Whistling Mine.esp") and is_master("Settlements Expanded SE.esp")) or (not is_master("Whistling Mine.esp") and not is_master("Settlements Expanded SE.esp"))'
     tag:
@@ -17902,7 +17902,7 @@ plugins:
         condition: 'active("Skyrim Better Roads - All In One - Merged.esp") and not active("Settlements Expanded SE - Skyrim Better Roads Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Soljund''s Sinkhole' ]
-        condition: 'active("Soljund''s Sinkhole.esp") and not active("Settlements Expanded SE - Soljunds Sinkhole Patch.esp")'
+        condition: 'active("soljund''s sinkhole.esp") and not active("Settlements Expanded SE - Soljunds Sinkhole Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Whistling Mine' ]
         condition: 'active("Whistling Mine.esp") and not active("Settlements Expanded SE - Whistling Mine Patch.esp")'
@@ -21037,7 +21037,7 @@ plugins:
         util: '[SSEEdit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 11
 
-  - name: 'Soljund''s Sinkhole.esp'
+  - name: 'soljund''s sinkhole.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1909-soljunds-sinkhole/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2959957/'
