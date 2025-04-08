@@ -3012,7 +3012,7 @@ plugins:
         condition: 'active("soljund''s sinkhole.esp") and not active("LoS II - Soljund''s Sinkhole patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Telengard' ]
-        condition: 'active("Telengard.esp") and not active("LoS II - Telengard patch.esp")'
+        condition: 'active("telengard.esp") and not active("LoS II - Telengard patch.esp")'
       - <<: *patchIncluded
         subs: [ 'The Fall of Granite Hill' ]
         condition: 'active("The Fall of Granite Hill.esp") and not active("LoS II - The Fall of Granite Hill patch.esp")'
@@ -6863,7 +6863,7 @@ plugins:
         subs:
           - 'Telengard'
           - '[Realistic Boat Bobbing Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/44311/)'
-        condition: 'active("Telengard.esp") and not active("RBB - Telengard Patch.esp")'
+        condition: 'active("telengard.esp") and not active("RBB - Telengard Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Unofficial Skyrim Special Edition Patch'
@@ -21080,7 +21080,7 @@ plugins:
         util: '[SSEEdit v4.0.2f](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 1
 
-  - name: 'Telengard.esp'
+  - name: 'telengard.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2107-telengard/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4066247/'
