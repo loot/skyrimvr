@@ -14053,7 +14053,7 @@ plugins:
           - '[Open Cities & Atlas Map Markers Patch](https://www.nexusmods.com/skyrimspecialedition/mods/38878/)'
         condition: 'active("open cities skyrim.esp") and not active("Open Cities - Atlas Map Markers SE -- Patch v2.esp")'
 
-  - name: 'Dawnguard Map Markers.esp'
+  - name: 'dawnguard map markers.esp'
     url: [ 'https://www.afkmods.com/index.php?/files/file/1896-dawnguard-map-markers/' ]
     group: *worldSettingsGroup
     after:
