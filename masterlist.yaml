@@ -17173,7 +17173,7 @@ plugins:
       - crc: 0xE9FF2708
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Bring Out Your Dead.esp'
+  - name: 'bring out your dead.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1892-bring-out-your-dead/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2956453/'
@@ -19491,7 +19491,7 @@ plugins:
         condition: 'active("Blowing in the Wind SSE.esp") and not active("Dawn of Skyrim.esp") and not active("ETaC - Complete.esp") and not active("Blowing in the Wind - JKs Skyrim Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Bring Out Your Dead' ]
-        condition: 'active("Bring Out Your Dead.esp") and not active("JKs Skyrim_(BOYD|Arthmoor All)_Patch\.esp")'
+        condition: 'active("bring out your dead.esp") and not active("JKs Skyrim_(BOYD|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Carriage and Ferry Travel Overhaul' ]
         condition: 'active("CFTO.esp") and not active("CFTO-JK-Patch.esp") and not active("ETaC - Complete.esp")'
@@ -21602,7 +21602,7 @@ plugins:
       - '3DNPC.esp'
       - 'Ambriel.esp'
       - 'AzurasShield_SE_Eng.esp'
-      - 'Bring Out Your Dead.esp'
+      - 'bring out your dead.esp'
       - 'CFTO.esp'
       - 'Clockwork.esp'
       - 'CollegeOfWinterholdImmersive.esp'
