@@ -17216,7 +17216,7 @@ plugins:
         condition: 'active("Landscape Fixes For Grass Mods.esp") and not active("CC_LFFGM_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Storefront' ]
-        condition: 'active("Storefront.esp") and not active("CC_ArtStorefront_Patch.esp")'
+        condition: 'active("storefront.esp") and not active("CC_ArtStorefront_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'The Great City of Solitude' ]
         condition: 'active("The Great City of Solitude.esp") and not active("CC_TGCS_Patch.esp")'
@@ -18073,7 +18073,7 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 2
 
-  - name: 'Storefront.esp'
+  - name: 'storefront.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1910-storefront/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2948562/'
@@ -19518,7 +19518,7 @@ plugins:
         condition: 'active("RealisticWaterTwo.esp") and not active("JKs Skyrim_RWT_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Storefront' ]
-        condition: 'active("Storefront.esp") and not active("JKs Skyrim_(Storefront|Arthmoor All)_Patch\.esp")'
+        condition: 'active("storefront.esp") and not active("JKs Skyrim_(Storefront|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Thunderchild' ]
         condition: 'active("Thunderchild - Epic Shout Package.esp") and not active("JKs Skyrim_Thunderchild_Patch.esp")'
@@ -19992,8 +19992,8 @@ plugins:
       - 'https://www.afkmods.com/index.php?/files/file/2178-oakwood/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4117042/'
     after:
-      - name: 'Storefront.esp'
-        condition: '(is_master("Storefront.esp") and is_master("oakwood.esp")) or (not is_master("Storefront.esp") and not is_master("oakwood.esp"))'
+      - name: 'storefront.esp'
+        condition: '(is_master("storefront.esp") and is_master("oakwood.esp")) or (not is_master("storefront.esp") and not is_master("oakwood.esp"))'
       - name: 'TouringCarriages-Oakwood.esp'
         condition: '(is_master("TouringCarriages-Oakwood.esp") and is_master("oakwood.esp")) or (not is_master("TouringCarriages-Oakwood.esp") and not is_master("oakwood.esp"))'
     inc: [ 'Lakeview_Extended.esp' ]
