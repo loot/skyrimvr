@@ -2937,7 +2937,7 @@ plugins:
         condition: 'active("darkwater crossing.esp") and not active("LoS II - Darkwater Crossing patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Dragon Bridge' ]
-        condition: 'active("Dragon Bridge.esp") and not active("LoS II - Dragon Bridge patch.esp")'
+        condition: 'active("dragon bridge.esp") and not active("LoS II - Dragon Bridge patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Expanded Towns and Cities' ]
         condition: 'active("ETaC - Complete.esp") and not active("LoS II - ETaC patch.esp")'
@@ -6645,7 +6645,7 @@ plugins:
         condition: 'active("alternate start - live another life.esp") and not (active("Landscape Fixes For Grass mods - Alternate start Locations.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dragon Bridge' ]
-        condition: 'active("Dragon Bridge.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("dragon bridge.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Falkreath' ]
         condition: 'active("Falkreath.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Falkreath PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -6709,7 +6709,7 @@ plugins:
   - name: 'Landscape (Fixes )?For Grass Mods .*\.esp'
     after: [ 'Landscape Fixes For Grass Mods.esp' ]
   - name: 'Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp'
-    after: [ 'Dragon Bridge.esp' ]
+    after: [ 'dragon bridge.esp' ]
   - name: 'Landscape For Grass Mods -Immersive Citizens PATCH.esp'
     after: [ 'Immersive Citizens - AI Overhaul.esp' ]
   - name: 'Landscape For Grass Mods JK''S Skyrim.esp'
@@ -18591,7 +18591,7 @@ plugins:
       - crc: 0x3305FDD4
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
 
-  - name: 'Dragon Bridge.esp'
+  - name: 'dragon bridge.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1979-dragon-bridge/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/3991097'
@@ -19449,12 +19449,12 @@ plugins:
         subs:
           - 'The Great City of Dragon Bridge'
           - '[Rob''s Bug Fixes - TGC Dragon Bridge](https://www.nexusmods.com/skyrimspecialedition/mods/68412/)'
-        condition: 'active("The Great City of Dragon Bridge.esp") and not active("Dragon Bridge.esp") and not active("The Great City of Dragon Bridge - JK''s Skyrim Patch.esp")'
+        condition: 'active("The Great City of Dragon Bridge.esp") and not active("dragon bridge.esp") and not active("The Great City of Dragon Bridge - JK''s Skyrim Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'The Great City of Dragon Bridge & Arthmoor''s Dragon Bridge'
           - '[Rob''s Bug Fixes - TGC Dragon Bridge](https://www.nexusmods.com/skyrimspecialedition/mods/68412/)'
-        condition: 'active("The Great City of Dragon Bridge.esp") and active("Dragon Bridge.esp") and not active("The Great City of Dragon Bridge - JK''s + Arth''s Patch.esp")'
+        condition: 'active("The Great City of Dragon Bridge.esp") and active("dragon bridge.esp") and not active("The Great City of Dragon Bridge - JK''s + Arth''s Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'The Great City of Rorikstead'
@@ -19470,7 +19470,7 @@ plugins:
         condition: 'active("dawnstar.esp") and not active("JKs Skyrim_(Dawnstar|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dragon Bridge' ]
-        condition: 'active("Dragon Bridge.esp") and not active("The Great City of Dragon Bridge.esp") and not active("JKs Skyrim_(Dragon Bridge|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("dragon bridge.esp") and not active("The Great City of Dragon Bridge.esp") and not active("JKs Skyrim_(Dragon Bridge|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Falkreath' ]
         condition: 'active("Falkreath.esp") and not active("JKs Skyrim_(Falkreath|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
@@ -21130,7 +21130,7 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/68412/'
         name: 'Rob''s Bug Fixes - TGC Dragon Bridge'
     after:
-      - name: 'Dragon Bridge.esp'
+      - name: 'dragon bridge.esp'
         condition: 'active("TGCoDragon Bridge - Arthmoor DB Patch.esp") or active("The Great City of Dragon Bridge - JK''s + Arth''s Patch.esp")'
     clean:
       - crc: 0xEFA73FDF
