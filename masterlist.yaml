@@ -2955,7 +2955,7 @@ plugins:
         condition: 'active("falkreath.esp") and not active("LoS II - Falkreath patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Helarchen Creek' ]
-        condition: 'active("Helarchen Creek.esp") and not active("LoS II - Helarchen Creek patch.esp")'
+        condition: 'active("helarchen creek.esp") and not active("LoS II - Helarchen Creek patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Ivarstead' ]
         condition: 'active("Ivarstead.esp") and not active("LoS II - Ivarstead patch.esp")'
@@ -19160,7 +19160,7 @@ plugins:
         util: '[SSEEdit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 2
 
-  - name: 'Helarchen Creek.esp'
+  - name: 'helarchen creek.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1927-helarchen-creek/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/3090713/'
