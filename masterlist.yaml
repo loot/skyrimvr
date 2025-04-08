@@ -8378,7 +8378,7 @@ plugins:
       - crc: 0x8040AB87
         util: 'SSEEdit v4.0.4b'
 
-  - name: 'Ars Metallica.esp'
+  - name: 'ars metallica.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/321/' ]
     msg:
       - <<: *patch3rdParty_LotD
@@ -8456,7 +8456,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/28608/' ]
     group: *craftingGroup
     after: [ 'WACCF_Armor and Clothing Extension.esp' ]
-    inc: [ 'Ars Metallica.esp' ]
+    inc: [ 'ars metallica.esp' ]
     req: [ *SKSE ]
     tag:
       - Graphics
@@ -8486,7 +8486,7 @@ plugins:
   - name: 'CRAFT.esp'
     group: *craftingGroup
     inc:
-      - 'Ars Metallica.esp'
+      - 'ars metallica.esp'
       - 'Complete Crafting Overhaul_Remastered.esp'
       - 'LOTD Replica Tweaks.esp'
       - 'Simple Smithing Overhaul.esp'
@@ -8595,7 +8595,7 @@ plugins:
       - <<: *patchUnavailable
         type: say
         subs: [ 'Ars Metallica' ]
-        condition: 'active("Ars Metallica.esp")'
+        condition: 'active("ars metallica.esp")'
       - <<: *patchUnavailable
         type: say
         subs: [ 'Weapons Armor Clothing and Clutter Fixes' ]
@@ -9203,7 +9203,7 @@ plugins:
         condition: 'active("AI Overhaul.esp") and not active("MLU - AI Overhaul.esp") and not active("MLU Patches Merged.esp")'
       - <<: *patchProvided
         subs: [ 'Ars Metallica - Smithing Enhancements' ]
-        condition: 'active("Ars Metallica.esp") and not active("MLU - Ars Metallica Patch.esp") and not active("MLU Patches Merged.esp")'
+        condition: 'active("ars metallica.esp") and not active("MLU - Ars Metallica Patch.esp") and not active("MLU Patches Merged.esp")'
       - <<: *patchProvided
         subs: [ 'Complete Crafting Overhaul Remastered' ]
         condition: 'active("Complete Crafting Overhaul_Remastered.esp") and not active("MLU - CCOR.esp") and not active("MLU + CCORemastered - Patch.esp") and not active("MLU Patches Merged.esp")'
@@ -14804,7 +14804,7 @@ plugins:
         condition: 'active("LegacyoftheDragonborn.esm") and not active("DBM_DGA_Patch.esp") and version("LegacyoftheDragonborn.esm", "5.0.24", >=)'
       - <<: *patchProvided
         subs: [ 'Ars Metallica - Smithing Enhancement' ]
-        condition: 'active("Ars Metallica.esp") and not active("DGA-ArsMSE CompatPatch.esp")'
+        condition: 'active("ars metallica.esp") and not active("DGA-ArsMSE CompatPatch.esp")'
       - *patch3rdParty_SRPC
     tag:
       - Actors.CombatStyle
