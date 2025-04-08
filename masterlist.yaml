@@ -2958,7 +2958,7 @@ plugins:
         condition: 'active("helarchen creek.esp") and not active("LoS II - Helarchen Creek patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Ivarstead' ]
-        condition: 'active("Ivarstead.esp") and not active("LoS II - Ivarstead patch.esp")'
+        condition: 'active("ivarstead.esp") and not active("LoS II - Ivarstead patch.esp")'
       - <<: *patchIncluded
         subs: [ 'JK''s Riverwood' ]
         condition: 'active("JKs Riverwood.esp") and not active("LoS II - JKs Riverwood patch.esp")'
@@ -6651,7 +6651,7 @@ plugins:
         condition: 'active("falkreath.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Falkreath PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Ivarstead' ]
-        condition: 'active("Ivarstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Ivarstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("ivarstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Ivarstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Oakwood' ]
         condition: 'active("Oakwood.esp") and not (active("Landscape For Grass Mods - Oakwood PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -19251,7 +19251,7 @@ plugins:
         util: '[SSEEdit v4.0.1](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 13
 
-  - name: 'Ivarstead.esp'
+  - name: 'ivarstead.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1900-ivarstead/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2958352/'
@@ -19476,7 +19476,7 @@ plugins:
         condition: 'active("falkreath.esp") and not active("JKs Skyrim_(Falkreath|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Ivarstead' ]
-        condition: 'active("Ivarstead.esp") and not active("JKs Skyrim_(Ivarstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("ivarstead.esp") and not active("JKs Skyrim_(Ivarstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Rorikstead' ]
         condition: 'active("Rorikstead.esp") and not active("The Great City of Rorikstead.esp") and not active("JKs Skyrim_(Rorikstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
