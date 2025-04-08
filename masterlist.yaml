@@ -2934,10 +2934,10 @@ plugins:
         condition: 'active("Convenient Bridges.esp") and not active("LoS II - Convenient Bridges patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Darkwater Crossing' ]
-        condition: 'active("Darkwater Crossing.esp") and not active("LoS II - Darkwater Crossing patch.esp")'
+        condition: 'active("darkwater crossing.esp") and not active("LoS II - Darkwater Crossing patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Dragon Bridge' ]
-        condition: 'active("Dragon Bridge.esp") and not active("LoS II - Dragon Bridge patch.esp")'
+        condition: 'active("dragon bridge.esp") and not active("LoS II - Dragon Bridge patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Expanded Towns and Cities' ]
         condition: 'active("ETaC - Complete.esp") and not active("LoS II - ETaC patch.esp")'
@@ -2952,13 +2952,13 @@ plugins:
         condition: 'active("Enhanced Solitude SSE.esp") and not active("LoS II - Enhanced Solitude SSE patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Falkreath' ]
-        condition: 'active("Falkreath.esp") and not active("LoS II - Falkreath patch.esp")'
+        condition: 'active("falkreath.esp") and not active("LoS II - Falkreath patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Helarchen Creek' ]
-        condition: 'active("Helarchen Creek.esp") and not active("LoS II - Helarchen Creek patch.esp")'
+        condition: 'active("helarchen creek.esp") and not active("LoS II - Helarchen Creek patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Ivarstead' ]
-        condition: 'active("Ivarstead.esp") and not active("LoS II - Ivarstead patch.esp")'
+        condition: 'active("ivarstead.esp") and not active("LoS II - Ivarstead patch.esp")'
       - <<: *patchIncluded
         subs: [ 'JK''s Riverwood' ]
         condition: 'active("JKs Riverwood.esp") and not active("LoS II - JKs Riverwood patch.esp")'
@@ -2967,7 +2967,7 @@ plugins:
         condition: 'active("JKs Skyrim.esp") and not active("LoS II - JKs Skyrim patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Karthwasten' ]
-        condition: 'active("Karthwasten.esp") and not active("LoS II - Karthwasten patch.esp")'
+        condition: 'active("karthwasten.esp") and not active("LoS II - Karthwasten patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Kynesgrove' ]
         condition: 'active("Kynesgrove.esp") and not active("LoS II - Kynesgrove patch.esp")'
@@ -4241,7 +4241,7 @@ plugins:
         condition: 'active("3DNPC.esp") and not active("3DNPC TKAA Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Keld-Nar' ]
-        condition: 'active("Keld-Nar.esp") and not active("Keld-Nar TKAA Patch.esp")'
+        condition: 'active("keld-nar.esp") and not active("Keld-Nar TKAA Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Legacy of the Dragonborn' ]
         condition: 'active("LegacyoftheDragonborn.esm") and not active("LegacyoftheDragonborn TKAA Patch.esp")'
@@ -4807,7 +4807,7 @@ plugins:
         condition: 'active("alternate start - live another life.esp") and not active("3DNPC Alternative Locations.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Karthwasten' ]
-        condition: 'active("Karthwasten.esp") and not active("3DNPC - Arth Karthwasten Patch.esp")'
+        condition: 'active("karthwasten.esp") and not active("3DNPC - Arth Karthwasten Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Kynesgrove' ]
         condition: 'active("Kynesgrove.esp") and not active("3DNPC - Arth Kynesgrove Patch.esp")'
@@ -6645,13 +6645,13 @@ plugins:
         condition: 'active("alternate start - live another life.esp") and not (active("Landscape Fixes For Grass mods - Alternate start Locations.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dragon Bridge' ]
-        condition: 'active("Dragon Bridge.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("dragon bridge.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Falkreath' ]
-        condition: 'active("Falkreath.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Falkreath PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("falkreath.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Falkreath PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Ivarstead' ]
-        condition: 'active("Ivarstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Ivarstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("ivarstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Ivarstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Oakwood' ]
         condition: 'active("Oakwood.esp") and not (active("Landscape For Grass Mods - Oakwood PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -6709,7 +6709,7 @@ plugins:
   - name: 'Landscape (Fixes )?For Grass Mods .*\.esp'
     after: [ 'Landscape Fixes For Grass Mods.esp' ]
   - name: 'Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp'
-    after: [ 'Dragon Bridge.esp' ]
+    after: [ 'dragon bridge.esp' ]
   - name: 'Landscape For Grass Mods -Immersive Citizens PATCH.esp'
     after: [ 'Immersive Citizens - AI Overhaul.esp' ]
   - name: 'Landscape For Grass Mods JK''S Skyrim.esp'
@@ -11621,8 +11621,8 @@ plugins:
       - 'Wind District Breezehome - Replacer.esp'
     msg:
       - <<: *compatIssuesWithX
-        subs: [ 'Arthmoor''s Dawnstar **Dawnstar.esp**' ]
-        condition: 'active("Dawnstar.esp") and not active("CC_ArtDws_IC_Patch.esp")'
+        subs: [ 'Arthmoor''s Dawnstar **dawnstar.esp**' ]
+        condition: 'active("dawnstar.esp") and not active("CC_ArtDws_IC_Patch.esp")'
       - <<: *compatIssuesWithX
         subs: [ 'Better Cities SSE **BetterCitiesWhiterun.esp**, **Better Cities Solitude.esp**' ]
         condition: 'active("BetterCitiesWhiterun.esp") or active("Better Cities Solitude.esp")'
@@ -14053,7 +14053,7 @@ plugins:
           - '[Open Cities & Atlas Map Markers Patch](https://www.nexusmods.com/skyrimspecialedition/mods/38878/)'
         condition: 'active("open cities skyrim.esp") and not active("Open Cities - Atlas Map Markers SE -- Patch v2.esp")'
 
-  - name: 'Dawnguard Map Markers.esp'
+  - name: 'dawnguard map markers.esp'
     url: [ 'https://www.afkmods.com/index.php?/files/file/1896-dawnguard-map-markers/' ]
     group: *worldSettingsGroup
     after:
@@ -15887,7 +15887,7 @@ plugins:
       - crc: 0x218B87C0
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Skyshards.esp'
+  - name: 'skyshards.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1939-eso-skyshards/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/3326552/'
@@ -17131,7 +17131,7 @@ plugins:
       - crc: 0x51F9FAE2
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Bee Hives.esp'
+  - name: 'bee hives.esp'
     url: [ 'https://www.afkmods.com/index.php?/files/file/1891-bee-hives/' ]
     group: *earlyLoadersGroup
     clean:
@@ -17173,7 +17173,7 @@ plugins:
       - crc: 0xE9FF2708
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Bring Out Your Dead.esp'
+  - name: 'bring out your dead.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1892-bring-out-your-dead/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2956453/'
@@ -17210,7 +17210,7 @@ plugins:
         condition: 'active("cutting room floor.esp") and not active("CC_CRF_Patch.esp") and not active("CC_CRF_LFFGM_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Dawnstar' ]
-        condition: 'active("Dawnstar.esp") and not active("CC_ArtDws_Patch.esp") and not active("CC_ArtDws_IC_Patch.esp")'
+        condition: 'active("dawnstar.esp") and not active("CC_ArtDws_Patch.esp") and not active("CC_ArtDws_IC_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Landscape Fixes For Grass Mods' ]
         condition: 'active("Landscape Fixes For Grass Mods.esp") and not active("CC_LFFGM_Patch.esp")'
@@ -17243,7 +17243,7 @@ plugins:
     msg:
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dawnstar' ]
-        condition: 'active("Dawnstar.esp") and not active("CFTO - Arthmoor Danwstar Patch.esp")'
+        condition: 'active("dawnstar.esp") and not active("CFTO - Arthmoor Danwstar Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Hearthfire Extended' ]
         condition: 'active("hearthfireextended.esp") and not active("HFE-CFTO-Patch.esp")'
@@ -17356,7 +17356,7 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 4
 
-  - name: 'Dolmen Ruins.esp'
+  - name: 'dolmen ruins.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1897-dolmen-ruins-eso-dark-anchors/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2941128/'
@@ -18541,15 +18541,15 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 23
 
-  - name: 'Darkwater Crossing.esp'
+  - name: 'darkwater crossing.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1895-darkwater-crossing/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2949694/'
     after:
       - name: 'Finding_Derkeethus.esp'
-        condition: '(is_master("Finding_Derkeethus.esp") and is_master("Darkwater Crossing.esp")) or (not is_master("Finding_Derkeethus.esp") and not is_master("Darkwater Crossing.esp"))'
+        condition: '(is_master("Finding_Derkeethus.esp") and is_master("darkwater crossing.esp")) or (not is_master("Finding_Derkeethus.esp") and not is_master("darkwater crossing.esp"))'
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("Darkwater Crossing.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("Darkwater Crossing.esp"))'
+        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("darkwater crossing.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("darkwater crossing.esp"))'
     tag:
       - Keywords
       - Names
@@ -18580,18 +18580,18 @@ plugins:
       - crc: 0x37F1F20D
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Dawnstar.esp'
+  - name: 'dawnstar.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2035-dawnstar/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4042758/'
     after:
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Dawnstar.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("Dawnstar.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
+        condition: '(is_master("dawnstar.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("dawnstar.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
     clean:
       - crc: 0x3305FDD4
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
 
-  - name: 'Dragon Bridge.esp'
+  - name: 'dragon bridge.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1979-dragon-bridge/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/3991097'
@@ -18793,8 +18793,8 @@ plugins:
       - name: 'ViscousGrass.esp'
         condition: '(is_master("ETaC - Complete.esp") and is_master("ViscousGrass.esp")) or (not is_master("ETaC - Complete.esp") and not is_master("ViscousGrass.esp"))'
     inc:
-      - 'Darkwater Crossing.esp'
-      - 'Dawnstar.esp'
+      - 'darkwater crossing.esp'
+      - 'dawnstar.esp'
       - 'Eli_RiverwoodShack.esp'
       - 'HogorTheGiant_V1.esp'
       - 'JK''s Riverwood.esp'
@@ -18844,7 +18844,7 @@ plugins:
         condition: '(is_master("ETaC - Darkwater Crossing.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("ETaC - Darkwater Crossing.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
       - name: 'Skyrim Bridges.esp'
         condition: '(is_master("ETaC - Darkwater Crossing.esp") and is_master("Skyrim Bridges.esp")) or (not is_master("ETaC - Darkwater Crossing.esp") and not is_master("Skyrim Bridges.esp"))'
-    inc: [ 'Darkwater Crossing.esp' ]
+    inc: [ 'darkwater crossing.esp' ]
     msg:
       - <<: *patchIncluded
         subs: [ 'CLARALUX' ]
@@ -18864,7 +18864,7 @@ plugins:
         condition: '(is_master("ETaC - Dawnstar.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("ETaC - Dawnstar.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
       - name: 'Populated Cities Towns Villages Legendary.esp'
         condition: '(is_master("ETaC - Dawnstar.esp") and is_master("Populated Cities Towns Villages Legendary.esp")) or (not is_master("ETaC - Dawnstar.esp") and not is_master("Populated Cities Towns Villages Legendary.esp"))'
-    inc: [ 'Dawnstar.esp' ]
+    inc: [ 'dawnstar.esp' ]
     msg:
       - <<: *patchIncluded
         subs: [ 'Carriage and Ferry Travel Overhaul' ]
@@ -18959,28 +18959,28 @@ plugins:
       - crc: 0x6DDCF952
         util: 'SSEEdit v4.0.4b'
 
-  - name: 'Falkreath.esp'
+  - name: 'falkreath.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2143-falkreath/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4086477/'
     after:
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("Falkreath.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("Falkreath.esp"))'
+        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("falkreath.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("falkreath.esp"))'
       - name: 'moretosayfalkreath.esp'
-        condition: '(is_master("moretosayfalkreath.esp") and is_master("Falkreath.esp")) or (not is_master("moretosayfalkreath.esp") and not is_master("Falkreath.esp"))'
+        condition: '(is_master("moretosayfalkreath.esp") and is_master("falkreath.esp")) or (not is_master("moretosayfalkreath.esp") and not is_master("falkreath.esp"))'
     clean:
       - crc: 0x3B751958
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
 
-  - name: 'Fall of Granite Hill.esp'
+  - name: 'fall of granite hill.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2156-the-fall-of-granite-hill/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4092108'
     after:
       - name: 'HoldBorderBanners.esp'
-        condition: 'not is_master("Fall of Granite Hill.esp")'
+        condition: 'not is_master("fall of granite hill.esp")'
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Fall of Granite Hill.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("Fall of Granite Hill.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
+        condition: '(is_master("fall of granite hill.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("fall of granite hill.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
     clean:
       - crc: 0x7D237336
         util: 'SSEEdit v4.0.3g'
@@ -19160,7 +19160,7 @@ plugins:
         util: '[SSEEdit v4.0.3h (Hotfix 1)](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 2
 
-  - name: 'Helarchen Creek.esp'
+  - name: 'helarchen creek.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1927-helarchen-creek/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/3090713/'
@@ -19251,7 +19251,7 @@ plugins:
         util: '[SSEEdit v4.0.1](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 13
 
-  - name: 'Ivarstead.esp'
+  - name: 'ivarstead.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1900-ivarstead/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2958352/'
@@ -19449,12 +19449,12 @@ plugins:
         subs:
           - 'The Great City of Dragon Bridge'
           - '[Rob''s Bug Fixes - TGC Dragon Bridge](https://www.nexusmods.com/skyrimspecialedition/mods/68412/)'
-        condition: 'active("The Great City of Dragon Bridge.esp") and not active("Dragon Bridge.esp") and not active("The Great City of Dragon Bridge - JK''s Skyrim Patch.esp")'
+        condition: 'active("The Great City of Dragon Bridge.esp") and not active("dragon bridge.esp") and not active("The Great City of Dragon Bridge - JK''s Skyrim Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'The Great City of Dragon Bridge & Arthmoor''s Dragon Bridge'
           - '[Rob''s Bug Fixes - TGC Dragon Bridge](https://www.nexusmods.com/skyrimspecialedition/mods/68412/)'
-        condition: 'active("The Great City of Dragon Bridge.esp") and active("Dragon Bridge.esp") and not active("The Great City of Dragon Bridge - JK''s + Arth''s Patch.esp")'
+        condition: 'active("The Great City of Dragon Bridge.esp") and active("dragon bridge.esp") and not active("The Great City of Dragon Bridge - JK''s + Arth''s Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'The Great City of Rorikstead'
@@ -19467,16 +19467,16 @@ plugins:
         condition: 'active("The Great City of Rorikstead.esp") and active("Rorikstead.esp") and not active("The Great City of Rorikstead - JK''s + Arth''s Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dawnstar' ]
-        condition: 'active("Dawnstar.esp") and not active("JKs Skyrim_(Dawnstar|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("dawnstar.esp") and not active("JKs Skyrim_(Dawnstar|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Dragon Bridge' ]
-        condition: 'active("Dragon Bridge.esp") and not active("The Great City of Dragon Bridge.esp") and not active("JKs Skyrim_(Dragon Bridge|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("dragon bridge.esp") and not active("The Great City of Dragon Bridge.esp") and not active("JKs Skyrim_(Dragon Bridge|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Falkreath' ]
-        condition: 'active("Falkreath.esp") and not active("JKs Skyrim_(Falkreath|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("falkreath.esp") and not active("JKs Skyrim_(Falkreath|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Ivarstead' ]
-        condition: 'active("Ivarstead.esp") and not active("JKs Skyrim_(Ivarstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("ivarstead.esp") and not active("JKs Skyrim_(Ivarstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Rorikstead' ]
         condition: 'active("Rorikstead.esp") and not active("The Great City of Rorikstead.esp") and not active("JKs Skyrim_(Rorikstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
@@ -19491,7 +19491,7 @@ plugins:
         condition: 'active("Blowing in the Wind SSE.esp") and not active("Dawn of Skyrim.esp") and not active("ETaC - Complete.esp") and not active("Blowing in the Wind - JKs Skyrim Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Bring Out Your Dead' ]
-        condition: 'active("Bring Out Your Dead.esp") and not active("JKs Skyrim_(BOYD|Arthmoor All)_Patch\.esp")'
+        condition: 'active("bring out your dead.esp") and not active("JKs Skyrim_(BOYD|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Carriage and Ferry Travel Overhaul' ]
         condition: 'active("CFTO.esp") and not active("CFTO-JK-Patch.esp") and not active("ETaC - Complete.esp")'
@@ -19694,7 +19694,7 @@ plugins:
         subs: [ 'JK''s Skyrim' ]
         condition: 'active("JKs Skyrim.esp")'
 
-  - name: 'Karthwasten.esp'
+  - name: 'karthwasten.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1901-karthwasten/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2960640/'
@@ -19733,19 +19733,19 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 3
 
-  - name: 'Keld-Nar.esp'
+  - name: 'keld-nar.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2039-keld-nar/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4047950/'
     after:
       - name: 'Clockwork.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
       - name: 'Complete Alchemy & Cooking Overhaul.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
       - name: 'Landscape Fixes For Grass Mods.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
       - name: 'Watchtowers of Skyrim.esp'
-        condition: 'not is_master("Keld-Nar.esp")'
+        condition: 'not is_master("keld-nar.esp")'
     msg:
       - <<: *patchProvided
         subs: [ 'Clockwork' ]
@@ -21130,7 +21130,7 @@ plugins:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/68412/'
         name: 'Rob''s Bug Fixes - TGC Dragon Bridge'
     after:
-      - name: 'Dragon Bridge.esp'
+      - name: 'dragon bridge.esp'
         condition: 'active("TGCoDragon Bridge - Arthmoor DB Patch.esp") or active("The Great City of Dragon Bridge - JK''s + Arth''s Patch.esp")'
     clean:
       - crc: 0xEFA73FDF
@@ -21602,7 +21602,7 @@ plugins:
       - '3DNPC.esp'
       - 'Ambriel.esp'
       - 'AzurasShield_SE_Eng.esp'
-      - 'Bring Out Your Dead.esp'
+      - 'bring out your dead.esp'
       - 'CFTO.esp'
       - 'Clockwork.esp'
       - 'CollegeOfWinterholdImmersive.esp'
@@ -22057,7 +22057,7 @@ plugins:
         util: '[SSEEdit v4.0.2j](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 1
 
-  - name: 'Dragon Claw Stands.esp'
+  - name: 'dragon claw stands.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1898-dragon-claw-stands/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2940632/'
