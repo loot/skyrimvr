@@ -17714,7 +17714,7 @@ plugins:
         util: '[SSEEdit v4.0.3g](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 11
 
-  - name: 'Oblivion Gates in Cities.esp'
+  - name: 'oblivion gates in cities.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1904-oblivion-gates-in-cities/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2964068/'
@@ -19509,7 +19509,7 @@ plugins:
         condition: 'active("zMirai.esp") and not active("JKs Skyrim_Mirai_Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Oblivion Gates' ]
-        condition: 'active("Oblivion Gates in Cities.esp") and not active("JKs Skyrim_(Oblivion Gates|Arthmoor All)_Patch\.esp")'
+        condition: 'active("oblivion gates in cities.esp") and not active("JKs Skyrim_(Oblivion Gates|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Open Cities Skyrim' ]
         condition: 'active("open cities skyrim.esp") and not active("JKs Skyrim_Open Cities_Patch.esp") and not active("JK - DoS - OCS Patch.esp")'
