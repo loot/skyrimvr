@@ -2101,8 +2101,8 @@ plugins:
         subs: [ 'Lucidity Sound FX **LSFX-SSE-Audiosettings.esp**' ]
         condition: 'active("LSFX-SSE-Audiosettings.esp")'
       - <<: *compatIssuesWithX
-        subs: [ 'Sounds of Skyrim **SoS - The Wilds.esp** or **SoundsofSkyrimComplete.esp** or **Sounds of Skyrim - Complete Edition.esp**' ]
-        condition: 'active("SoS - The Wilds.esp") or active("SoundsofSkyrimComplete.esp") or active("Sounds of Skyrim - Complete Edition.esp")'
+        subs: [ 'Sounds of Skyrim **SoS - The Wilds.esp** or **SoundsofSkyrimComplete.esp** or **sounds of skyrim - complete edition.esp**' ]
+        condition: 'active("SoS - The Wilds.esp") or active("SoundsofSkyrimComplete.esp") or active("sounds of skyrim - complete edition.esp")'
       - <<: *compatIssuesWithX
         subs: [ 'Reverb and Ambiance Overhaul **Reverb and Ambiance Overhaul - Skyrim.esp**' ]
         condition: 'active("Reverb and Ambiance Overhaul - Skyrim.esp")'
@@ -2304,7 +2304,7 @@ plugins:
         subs: [ 'OCW_MusicPatch_SMMM.esp' ]
         condition: 'not active("OCW_MusicPatch_SMMM.esp")'
 
-  - name: 'Sounds of Skyrim - Complete Edition.esp'
+  - name: 'sounds of skyrim - complete edition.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2196-sounds-of-skyrim-complete-edition-mcm/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4137094/'
@@ -20254,7 +20254,7 @@ plugins:
         condition: 'active("SoundsofSkyrimComplete.esp") and not active("OCW_SoS_((MCMSfA|SmMM)_Merged)?FEPatch.esp")'
       - <<: *patchIncluded
         subs: [ 'Sounds of Skyrim Complete Edition MCM' ]
-        condition: 'active("Sounds of Skyrim - Complete Edition.esp") and not active("OCW_SoS-A_FEPatch.esp")'
+        condition: 'active("sounds of skyrim - complete edition.esp") and not active("OCW_SoS-A_FEPatch.esp")'
       - <<: *patchIncluded
         subs: [ 'Spell Crafting for Skyrim' ]
         condition: 'active("_tck_SpellCrafting.esp") and not active("OCW_SC_FEPatch.esp")'
