@@ -6660,7 +6660,7 @@ plugins:
         condition: 'active("rorikstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Rorikstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Shor''s Stone' ]
-        condition: 'active("Shor''s Stone.esp") and not (active("Landscape For Grass Mods Arthmoor''s Shor''s Stone PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("shor''s stone.esp") and not (active("Landscape For Grass Mods Arthmoor''s Shor''s Stone PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Cutting Room Floor' ]
         condition: 'active("cutting room floor.esp") and not (active("Landscape Fixes For Grass mods - Cutting Room Floor Locations.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -20820,7 +20820,7 @@ plugins:
       - crc: 0xF3925568
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
 
-  - name: 'Shor''s Stone.esp'
+  - name: 'shor''s stone.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1908-shors-stone/'
       - 'https://bethesda.net/it/mods/skyrim/mod-detail/2958397/'
