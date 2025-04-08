@@ -15887,7 +15887,7 @@ plugins:
       - crc: 0x218B87C0
         util: 'SSEEdit v4.0.3'
 
-  - name: 'Skyshards.esp'
+  - name: 'skyshards.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1939-eso-skyshards/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/3326552/'
