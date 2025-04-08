@@ -3021,7 +3021,7 @@ plugins:
         condition: 'active("Weathered Road Signs.esp") and not active("LoS II - Weathered Road Signs patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Whistling Mine' ]
-        condition: 'active("Whistling Mine.esp") and not active("LoS II - Whistling Mine patch.esp")'
+        condition: 'active("whistling mine.esp") and not active("LoS II - Whistling Mine patch.esp")'
     dirty:
       - <<: *quickClean
         crc: 0x1499A9F9
@@ -17859,8 +17859,8 @@ plugins:
     after:
       - name: 'soljund''s sinkhole.esp'
         condition: '(is_master("soljund''s sinkhole.esp") and is_master("Settlements Expanded SE.esp")) or (not is_master("soljund''s sinkhole.esp") and not is_master("Settlements Expanded SE.esp"))'
-      - name: 'Whistling Mine.esp'
-        condition: '(is_master("Whistling Mine.esp") and is_master("Settlements Expanded SE.esp")) or (not is_master("Whistling Mine.esp") and not is_master("Settlements Expanded SE.esp"))'
+      - name: 'whistling mine.esp'
+        condition: '(is_master("whistling mine.esp") and is_master("Settlements Expanded SE.esp")) or (not is_master("whistling mine.esp") and not is_master("Settlements Expanded SE.esp"))'
     tag:
       - C.Acoustic
       - C.Location
@@ -17905,7 +17905,7 @@ plugins:
         condition: 'active("soljund''s sinkhole.esp") and not active("Settlements Expanded SE - Soljunds Sinkhole Patch.esp")'
       - <<: *patchProvided
         subs: [ 'Whistling Mine' ]
-        condition: 'active("Whistling Mine.esp") and not active("Settlements Expanded SE - Whistling Mine Patch.esp")'
+        condition: 'active("whistling mine.esp") and not active("Settlements Expanded SE - Whistling Mine Patch.esp")'
     clean:
       - crc: 0x3519894D
         util: 'SSEEdit v4.0.3g'
@@ -21339,13 +21339,13 @@ plugins:
         udr: 97
         itm: 2
 
-  - name: 'Whistling Mine.esp'
+  - name: 'whistling mine.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1912-whistling-mine/'
       - 'https://mods.bethesda.net/#en/workshop/skyrim/mod-detail/2959645/'
     after:
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Whistling Mine.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("Whistling Mine.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
+        condition: '(is_master("whistling mine.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("whistling mine.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
     inc: [ 'TES Arena Amol.esp' ]
     clean:
       - crc: 0xABF1B47B
