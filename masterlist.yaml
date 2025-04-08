@@ -2934,7 +2934,7 @@ plugins:
         condition: 'active("Convenient Bridges.esp") and not active("LoS II - Convenient Bridges patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Darkwater Crossing' ]
-        condition: 'active("Darkwater Crossing.esp") and not active("LoS II - Darkwater Crossing patch.esp")'
+        condition: 'active("darkwater crossing.esp") and not active("LoS II - Darkwater Crossing patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Dragon Bridge' ]
         condition: 'active("Dragon Bridge.esp") and not active("LoS II - Dragon Bridge patch.esp")'
@@ -18541,15 +18541,15 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         itm: 23
 
-  - name: 'Darkwater Crossing.esp'
+  - name: 'darkwater crossing.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1895-darkwater-crossing/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2949694/'
     after:
       - name: 'Finding_Derkeethus.esp'
-        condition: '(is_master("Finding_Derkeethus.esp") and is_master("Darkwater Crossing.esp")) or (not is_master("Finding_Derkeethus.esp") and not is_master("Darkwater Crossing.esp"))'
+        condition: '(is_master("Finding_Derkeethus.esp") and is_master("darkwater crossing.esp")) or (not is_master("Finding_Derkeethus.esp") and not is_master("darkwater crossing.esp"))'
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("Darkwater Crossing.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("Darkwater Crossing.esp"))'
+        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("darkwater crossing.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("darkwater crossing.esp"))'
     tag:
       - Keywords
       - Names
@@ -18793,7 +18793,7 @@ plugins:
       - name: 'ViscousGrass.esp'
         condition: '(is_master("ETaC - Complete.esp") and is_master("ViscousGrass.esp")) or (not is_master("ETaC - Complete.esp") and not is_master("ViscousGrass.esp"))'
     inc:
-      - 'Darkwater Crossing.esp'
+      - 'darkwater crossing.esp'
       - 'Dawnstar.esp'
       - 'Eli_RiverwoodShack.esp'
       - 'HogorTheGiant_V1.esp'
@@ -18844,7 +18844,7 @@ plugins:
         condition: '(is_master("ETaC - Darkwater Crossing.esp") and is_master("Immersive Citizens - AI Overhaul.esp")) or (not is_master("ETaC - Darkwater Crossing.esp") and not is_master("Immersive Citizens - AI Overhaul.esp"))'
       - name: 'Skyrim Bridges.esp'
         condition: '(is_master("ETaC - Darkwater Crossing.esp") and is_master("Skyrim Bridges.esp")) or (not is_master("ETaC - Darkwater Crossing.esp") and not is_master("Skyrim Bridges.esp"))'
-    inc: [ 'Darkwater Crossing.esp' ]
+    inc: [ 'darkwater crossing.esp' ]
     msg:
       - <<: *patchIncluded
         subs: [ 'CLARALUX' ]
