@@ -17356,7 +17356,7 @@ plugins:
         util: '[SSEEdit v4.0.2](https://www.nexusmods.com/skyrimspecialedition/mods/164)'
         nav: 4
 
-  - name: 'Dolmen Ruins.esp'
+  - name: 'dolmen ruins.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/1897-dolmen-ruins-eso-dark-anchors/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/2941128/'
