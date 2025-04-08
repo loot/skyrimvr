@@ -2952,7 +2952,7 @@ plugins:
         condition: 'active("Enhanced Solitude SSE.esp") and not active("LoS II - Enhanced Solitude SSE patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Falkreath' ]
-        condition: 'active("Falkreath.esp") and not active("LoS II - Falkreath patch.esp")'
+        condition: 'active("falkreath.esp") and not active("LoS II - Falkreath patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Helarchen Creek' ]
         condition: 'active("Helarchen Creek.esp") and not active("LoS II - Helarchen Creek patch.esp")'
@@ -6648,7 +6648,7 @@ plugins:
         condition: 'active("dragon bridge.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Dragon Bridge PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Falkreath' ]
-        condition: 'active("Falkreath.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Falkreath PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
+        condition: 'active("falkreath.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Falkreath PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Ivarstead' ]
         condition: 'active("Ivarstead.esp") and not (active("Landscape For Grass Mods - Arthmoor''s Ivarstead PATCH.esp") or active("Landscape Fixes For Grass Patches Merged.esp"))'
@@ -18959,15 +18959,15 @@ plugins:
       - crc: 0x6DDCF952
         util: 'SSEEdit v4.0.4b'
 
-  - name: 'Falkreath.esp'
+  - name: 'falkreath.esp'
     url:
       - 'https://www.afkmods.com/index.php?/files/file/2143-falkreath/'
       - 'https://bethesda.net/en/mods/skyrim/mod-detail/4086477/'
     after:
       - name: 'Immersive Citizens - AI Overhaul.esp'
-        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("Falkreath.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("Falkreath.esp"))'
+        condition: '(is_master("Immersive Citizens - AI Overhaul.esp") and is_master("falkreath.esp")) or (not is_master("Immersive Citizens - AI Overhaul.esp") and not is_master("falkreath.esp"))'
       - name: 'moretosayfalkreath.esp'
-        condition: '(is_master("moretosayfalkreath.esp") and is_master("Falkreath.esp")) or (not is_master("moretosayfalkreath.esp") and not is_master("Falkreath.esp"))'
+        condition: '(is_master("moretosayfalkreath.esp") and is_master("falkreath.esp")) or (not is_master("moretosayfalkreath.esp") and not is_master("falkreath.esp"))'
     clean:
       - crc: 0x3B751958
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
@@ -19473,7 +19473,7 @@ plugins:
         condition: 'active("dragon bridge.esp") and not active("The Great City of Dragon Bridge.esp") and not active("JKs Skyrim_(Dragon Bridge|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Falkreath' ]
-        condition: 'active("Falkreath.esp") and not active("JKs Skyrim_(Falkreath|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
+        condition: 'active("falkreath.esp") and not active("JKs Skyrim_(Falkreath|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
       - <<: *patchProvided
         subs: [ 'Arthmoor''s Ivarstead' ]
         condition: 'active("Ivarstead.esp") and not active("JKs Skyrim_(Ivarstead|Arth( CRF)? DA DB FA IV RO|Arthmoor All)_Patch\.esp")'
