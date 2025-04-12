@@ -3940,7 +3940,7 @@ plugins:
         subs:
           - 'Armor and Clothing Extension'
           - '[Weapons Armor Clothing and Clutter Fixes - CBBE Patch](https://www.nexusmods.com/skyrimspecialedition/mods/19176/)'
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not file("CalienteTools/BodySlide/SliderSets/ACE.osp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not file("CalienteTools/BodySlide/SliderSets/ACE.osp")'
     clean:
       - crc: 0xD600DFE6
         util: 'SSEEdit v4.0.3'
@@ -4503,7 +4503,7 @@ plugins:
       - 'ScopedBows.esp'
     msg:
       - <<: *patch3rdParty_KPH_ACE
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("ACE_EtherealElvenOverhaul_Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("ACE_EtherealElvenOverhaul_Patch.esp")'
       - <<: *patch3rdParty_KPH_CACO
         condition: 'active("Complete Alchemy & Cooking Overhaul.esp") and not active("CACO ethereal_elven_overhaul Patch.esp")'
       - <<: *patchProvided
@@ -7490,7 +7490,7 @@ plugins:
         subs:
           - 'WACCF - Armor and Clothing Extension'
           - '[Armor and clothing Extension Joy Of Perspective Patch](https://www.nexusmods.com/skyrimspecialedition/mods/20114/)'
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("WACCF_ACE_JOP_Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("WACCF_ACE_JOP_Patch.esp")'
       - <<: *patcherScriptAvailable
         subs:
           - '[SSEEdit](https://www.nexusmods.com/skyrimspecialedition/mods/164/)'
@@ -8455,7 +8455,7 @@ plugins:
   - name: 'Complete Crafting Overhaul_Remastered.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/28608/' ]
     group: *craftingGroup
-    after: [ 'WACCF_Armor and Clothing Extension.esp' ]
+    after: [ 'waccf_armor and clothing extension.esp' ]
     inc: [ 'ars metallica.esp' ]
     req: [ *SKSE ]
     tag:
@@ -9007,13 +9007,13 @@ plugins:
         condition: 'active("Scarcity SE - Less Loot Mod.esp") and not active("EconomyOverhaul CV - Scarcity Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Trade and Barter' ]
-        condition: 'active("Trade & Barter.esp") and not active("EconomyOverhaul CV - TradeandBarter Patch.esp")'
+        condition: 'active("trade & barter.esp") and not active("EconomyOverhaul CV - TradeandBarter Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Vokrii - Minimalistic Perks of Skyrim' ]
         condition: 'active("Vokrii - Minimalistic Perks of Skyrim.esp") and not active("EconomyOverhaul CV - Vokrii Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Weapons Armor Clothing and Clutter Fixes' ]
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("EconomyOverhaul CV - WACCF Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("EconomyOverhaul CV - WACCF Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Wet and Cold' ]
         condition: 'active("WetandCold.esp") and not active("EconomyOverhaul CV - WetAndCold Patch.esp")'
@@ -9036,7 +9036,7 @@ plugins:
         condition: 'active("QuestsAreInSkyrimUSSEP.esp") and not active("EconomyOverhaul LV - QuestsAreinSkyrim Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Weapons Armor Clothing and Clutter Fixes' ]
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("EconomyOverhaul LV - WACCF Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("EconomyOverhaul LV - WACCF Patch.esp")'
     clean:
       - crc: 0x328BEACD
         util: 'SSEEdit v4.0.3'
@@ -9047,7 +9047,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/26085/' ]
     after:
       - 'LoreWorthyBandits.esp'
-      - 'WACCF_Armor and Clothing Extension.esp'
+      - 'waccf_armor and clothing extension.esp'
       - 'Weapon AF.esp'
       - 'Weapons Armor Clothing & Clutter Fixes.esp'
 
@@ -9505,7 +9505,7 @@ plugins:
         name: 'OMEGA Updated Replacer'
     after:
       - 'LoreWorthyBandits.esp'
-      - 'WACCF_Armor and Clothing Extension.esp'
+      - 'waccf_armor and clothing extension.esp'
       - 'Weapon AF.esp'
       - 'Weapons Armor Clothing & Clutter Fixes.esp'
     tag:
@@ -9705,7 +9705,7 @@ plugins:
       - crc: 0x82A18ABC
         util: 'SSEEdit v4.0.4b'
 
-  - name: 'Trade & Barter.esp'
+  - name: 'trade & barter.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/23081/' ]
     group: *economyGroup
     after:
@@ -9939,7 +9939,7 @@ plugins:
       - 'Superior Standing Stones.esp'
     after:
       - 'Convenient Horses.esp'
-      - 'Disparity.esp'
+      - 'disparity.esp'
     tag:
       - -Names
       - EffectStats
@@ -9960,7 +9960,7 @@ plugins:
             text: 'Disparityのオプション「変更された祝福の使用(Used Modified Blessings)」が無効になっているかを確認してください。'
           - lang: pt_PT
             text: 'Certifique-se que a opção de Disparity "Use Modified Blessings (trad. "Utilizar Benções Modificadas") está desativada.'
-        condition: 'active("Disparity.esp")'
+        condition: 'active("disparity.esp")'
     clean:
       - crc: 0x039C4DA3
         util: 'SSEEdit v4.0.3'
@@ -10333,7 +10333,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/41256/' ]
     after:
       - 'Convenient Horses.esp'
-      - 'Disparity.esp'
+      - 'disparity.esp'
     inc:
       - 'Aurora - Standing Stones of Skyrim.esp'
       - 'Andromeda - Unique Standing Stones of Skyrim.esp'
@@ -10607,7 +10607,7 @@ plugins:
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/33411/' ]
     after:
       - 'Convenient Horses.esp'
-      - 'Disparity.esp'
+      - 'disparity.esp'
     tag:
       - EffectStats
       - Graphics
@@ -12265,7 +12265,7 @@ plugins:
       - <<: *alreadyInX
         type: say
         subs: [ 'aMidianBorn Content Addon' ]
-        condition: 'active("aMidianBorn_ContentAddon.esp") and active("BetterQuestObjectives-AMBSkyforgePatch.esp")'
+        condition: 'active("amidianborn_contentaddon.esp") and active("BetterQuestObjectives-AMBSkyforgePatch.esp")'
     clean:
       - crc: 0xAB22406D
         util: 'SSEEdit v4.0.3'
@@ -12393,7 +12393,7 @@ plugins:
 
   - name: 'CollegeEntry.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/22184/' ]
-    after: [ 'WACCF_Armor and Clothing Extension.esp' ]
+    after: [ 'waccf_armor and clothing extension.esp' ]
     inc:
       - 'CollegeApplication.esp'
       - 'CollegeModifications.esp'
@@ -14036,8 +14036,10 @@ plugins:
       - crc: 0x3259520C
         util: 'SSEEdit v4.0.4'
 
-  - name: 'Atlas Map Markers.esp'
-    url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/24104/' ]
+  - name: 'atlas map markers.esp'
+    url:
+      - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/24104/'
+        name: 'Atlas Map Markers SE - Updated with MCM'
     group: *worldSettingsGroup
     after:
       - 'Complete Alchemy & Cooking Overhaul.esp'
@@ -14045,13 +14047,13 @@ plugins:
       - 'SL01AmuletsSkyrim.esp'
     inc:
       - name: 'open cities skyrim.esp'
-        condition: 'not active("Open Cities - Atlas Map Markers SE -- Patch v2.esp")'
+        condition: 'not active("opencitiesskyrim_atlasmapmarkers_patch.esp")'
     msg:
       - <<: *patch3rdParty
         subs:
           - 'Open Cities Skyrim'
-          - '[Open Cities & Atlas Map Markers Patch](https://www.nexusmods.com/skyrimspecialedition/mods/38878/)'
-        condition: 'active("open cities skyrim.esp") and not active("Open Cities - Atlas Map Markers SE -- Patch v2.esp")'
+          - '[kryptopyr''s Patch Hub](https://www.nexusmods.com/skyrimspecialedition/mods/19518/)'
+        condition: 'active("open cities skyrim.esp") and not active("opencitiesskyrim_atlasmapmarkers_patch.esp")'
 
   - name: 'dawnguard map markers.esp'
     url: [ 'https://www.afkmods.com/index.php?/files/file/1896-dawnguard-map-markers/' ]
@@ -14059,7 +14061,7 @@ plugins:
     after:
       - 'Atlas Legendary.esp'
       - 'Atlas Legendary OCS.esp'
-      - 'Atlas Map Markers.esp'
+      - 'atlas map markers.esp'
     clean:
       - crc: 0xAA2F3309
         util: 'SSEEdit v4.0.3'
@@ -14068,7 +14070,7 @@ plugins:
   - name: 'A Clear Map of Skyrim.esp'
     url: [ 'https://www.nexusmods.com/skyrimspecialedition/mods/56367/' ]
     group: *worldSettingsGroup
-    after: [ 'Atlas Map Markers.esp' ]
+    after: [ 'atlas map markers.esp' ]
 
   - name: 'Blackreach Paper Map for FWMF.esp'
     url:
@@ -14130,7 +14132,7 @@ plugins:
         subs:
           - 'Atlas Map Markers'
           - '[A Quality World Map Paper Patches](https://www.nexusmods.com/skyrimspecialedition/mods/30095/)'
-        condition: '(active("Atlas Map Markers.esp") or active("Atlas Legendary( OCS)?\.esp")) and not active("AQWMP_AMM_Patch.esp")'
+        condition: '(active("atlas map markers.esp") or active("Atlas Legendary( OCS)?\.esp")) and not active("AQWMP_AMM_Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Enhanced Lighting for ENB (ELE)'
@@ -14152,7 +14154,7 @@ plugins:
     msg:
       - <<: *patchUnavailable
         subs: [ 'Atlas Map Markers' ]
-        condition: 'active("Atlas Map Markers.esp") or active("Atlas Legendary.esp") or active("Atlas Legendary OCS.esp")'
+        condition: 'active("atlas map markers.esp") or active("Atlas Legendary.esp") or active("Atlas Legendary OCS.esp")'
       - <<: *patchUnavailable
         subs: [ 'Enhanced Lighting for ENB (ELE)' ]
         condition: 'active("ELE_SSE.esp")'
@@ -14197,7 +14199,7 @@ plugins:
       - crc: 0xFA7F23A7
         util: 'SSEEdit v4.0.4b'
 
-  - name: 'aMidianBorn_ContentAddon(Light)?\.esp'
+  - name: 'amidianborn_contentaddon(Light)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/35390/'
         name: 'aMidianBorn Content Addon'
@@ -14224,15 +14226,15 @@ plugins:
     msg:
       - <<: *requiresResources
         subs: [ '[aMidianBorn Book of Silence SE](https://www.nexusmods.com/skyrimspecialedition/mods/35382/) **(CCOR CONTENT ADDON BSA)**' ]
-        condition: 'not file("aMidianBorn_ContentAddon(Light)?\.bsa") and not file("textures/AMB Variants/dlc02/nordiccarvedbrown/nordiccarvedbootsm.dds")'
+        condition: 'not file("amidianborn_contentaddon(Light)?\.bsa") and not file("textures/AMB Variants/dlc02/nordiccarvedbrown/nordiccarvedbootsm.dds")'
       - <<: *useOnlyOneX
         subs: [ 'aMidianBorn Content Addon ESP' ]
-        condition: 'many("aMidianBorn_ContentAddon(Light)?\.esp")'
-  - name: 'aMidianBorn_ContentAddon.esp'
+        condition: 'many("amidianborn_contentaddon(Light)?\.esp")'
+  - name: 'amidianborn_contentaddon.esp'
     msg:
       - <<: *obsolete
         subs: [ '[aMidianBorn Content Addon](https://www.nexusmods.com/skyrimspecialedition/mods/35390/)' ]
-        condition: 'not version("aMidianBorn_ContentAddon.esp", "2.2", >=) and active("Weapons Armor Clothing & Clutter Fixes.esp")'
+        condition: 'not version("amidianborn_contentaddon.esp", "2.2", >=) and active("Weapons Armor Clothing & Clutter Fixes.esp")'
       - <<: *renameXtoY
         subs:
           - '**aMidianBorn_ContentAddonLight.bsa**'
@@ -14248,7 +14250,7 @@ plugins:
         subs:
           - '**aMidianBorn_ContentAddon.bsa**'
           - '**aMidianBorn_ContentAddonLight.bsa**'
-        condition: 'not file("aMidianBorn_ContentAddonLight.bsa") and file("aMidianBorn_ContentAddon.bsa") and not file("aMidianBorn_ContentAddon.esp")'
+        condition: 'not file("aMidianBorn_ContentAddonLight.bsa") and file("aMidianBorn_ContentAddon.bsa") and not file("amidianborn_contentaddon.esp")'
     clean:
       - crc: 0xD8B69F8C
         util: 'SSEEdit v4.0.3g'
@@ -14325,14 +14327,14 @@ plugins:
       - crc: 0x6D5880CE
         util: 'SSEEdit v4.0.3h (Hotfix 1)'
 
-  - name: 'WACCF_Armor and Clothing Extension(_SPID)?\.esp'
+  - name: 'waccf_armor and clothing extension(_spid)?\.esp'
     url:
       - link: 'https://www.nexusmods.com/skyrimspecialedition/mods/19002/'
         name: 'Armor and Clothing Extension'
     tag:
       - Outfits.Add
       - Outfits.Remove
-  - name: 'WACCF_Armor and Clothing Extension.esp'
+  - name: 'waccf_armor and clothing extension.esp'
     after:
       - 'AmuletsShowOnEverything.esp'
       - 'AmuletsShowOnClothes.esp'
@@ -14366,7 +14368,7 @@ plugins:
     clean:
       - crc: 0xAFE71282
         util: 'SSEEdit v4.0.4b'
-  - name: 'WACCF_Armor and Clothing Extension_SPID.esp'
+  - name: 'waccf_armor and clothing extension_spid.esp'
     req: [ *SPID ]
     clean:
       - crc: 0xC9EF92AB
@@ -14795,7 +14797,7 @@ plugins:
   - name: 'DawnguardArsenal.esp'
     msg:
       - <<: *patch3rdParty_KPH_ACE
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("DawnguardArsenal_WACCF-ACE_Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("DawnguardArsenal_WACCF-ACE_Patch.esp")'
       - <<: *patch3rdParty_KPH_CCOR
         condition: 'active("Complete Crafting Overhaul_Remastered.esp") and not active("DawnguardArsenal_CCOR_Patch.esp")'
       - <<: *patch3rdParty_KPH_WACCF
@@ -15521,7 +15523,7 @@ plugins:
         subs: [ 'Opulent Outfits ESP' ]
         condition: 'many("OpulentOutfits_2017-SSE (AIO|Replacer|Standalone)\.esp")'
   - name: 'OpulentOutfits_2017-SSE (AIO|Replacer)\.esp'
-    inc: [ 'WACCF_Armor and Clothing Extension.esp' ]
+    inc: [ 'waccf_armor and clothing extension.esp' ]
     tag:
       - Actors.Perks.Add
       - Actors.Spells
@@ -19567,7 +19569,7 @@ plugins:
         subs:
           - 'Armor and Clothing Extension'
           - '[JK''s Interiors Patch Collection](https://www.nexusmods.com/skyrimspecialedition/mods/35910/)'
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("JKs Temple of Talos - ACE Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("JKs Temple of Talos - ACE Patch.esp")'
       - <<: *patch3rdParty
         subs:
           - 'Cheesemod for EVERYONE'
@@ -20064,7 +20066,7 @@ plugins:
         condition: 'version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", <)'
       - name: 'Weapons Armor Clothing & Clutter Fixes.esp'
         condition: 'version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", <)'
-      - name: 'WACCF_Armor and Clothing Extension.esp'
+      - name: 'waccf_armor and clothing extension.esp'
         condition: 'version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", <)'
       - name: 'CollegeOfWinterholdImmersive.esp'
         condition: 'file("UltimateCollege.esp")'
@@ -20113,7 +20115,7 @@ plugins:
         condition: 'active("Atlas Legendary.esp") and not active("OCW_AMM_FEPatch.esp") and not active("UltimateCollege.esp")'
       - <<: *patchIncluded
         subs: [ 'Atlas Map Markers with MCM' ]
-        condition: 'active("Atlas Map Markers.esp") and not active("OCW_AMM-SE_FEPatch.esp") and not active("UltimateCollege.esp")'
+        condition: 'active("atlas map markers.esp") and not active("OCW_AMM-SE_FEPatch.esp") and not active("UltimateCollege.esp")'
       - <<: *patchIncluded
         subs: [ 'Audio Overhaul for Skyrim' ]
         condition: 'active("Audio Overhaul Skyrim.esp") and not active("OCW_AO_FEPatch.esp") and not active("UltimateCollege.esp") and version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", >=)'
@@ -20287,7 +20289,7 @@ plugins:
         condition: 'active("Weapons Armor Clothing & Clutter Fixes.esp") and not active("OCW_WACCF_FEPatch.esp") and not active("UltimateCollege.esp") and version("Weapons Armor Clothing & Clutter Fixes.esp", "2.0", >=)'
       - <<: *patchIncluded
         subs: [ 'WACCF Armor and Clothing Extension' ]
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("OCW_ACE_FEPatch.esp") and not active("UltimateCollege.esp") and version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", >=)'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("OCW_ACE_FEPatch.esp") and not active("UltimateCollege.esp") and version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", >=)'
       - <<: *patchIncluded
         subs: [ 'Winterhold College Hideout' ]
         condition: 'active("WinterholdCollegeHideout.esp") and not active("OCW_WCH_FEPatch.esp") and not version("OCW_Obscure''s_CollegeofWinterhold.esp", "1.5.00", >=)'
@@ -23907,7 +23909,7 @@ plugins:
     msg:
       - <<: *alreadyInOrFixedByX
         subs: [ 'Armor and Clothing Extension v1.1+' ]
-        condition: 'version("WACCF_Armor and Clothing Extension.esp", "1.1", >=)'
+        condition: 'version("waccf_armor and clothing extension.esp", "1.1", >=)'
     tag: [ Relev ]
 
   - name: '(ICOW.*Patch|.* - ICOW Patch)\.esp'
@@ -23951,7 +23953,7 @@ plugins:
         condition: 'active("Weapons Armor Clothing & Clutter Fixes.esp")'
       - <<: *useInstead
         subs: [ 'imp_helm_legend_WACCF_AMB_Patch.esp' ]
-        condition: 'active("Weapons Armor Clothing & Clutter Fixes.esp") and active("aMidianBorn_ContentAddon.esp")'
+        condition: 'active("Weapons Armor Clothing & Clutter Fixes.esp") and active("amidianborn_contentaddon.esp")'
       - <<: *useInstead
         subs: [ '[Requiem - Improved Closefaced Helmets.esp](https://www.nexusmods.com/skyrimspecialedition/mods/64410/)' ]
         condition: 'active("Requiem.esp")'
@@ -24053,7 +24055,7 @@ plugins:
         condition: 'active("imp_helm_legend_WACCF_AMB_Patch.esp")'
       - <<: *useInstead
         subs: [ 'imp_helm_legend_WACCF_AMB_Patch.esp' ]
-        condition: 'active("aMidianBorn_ContentAddon.esp") and version("aMidianBorn_ContentAddon.esp", "2.0", >=)'
+        condition: 'active("amidianborn_contentaddon.esp") and version("amidianborn_contentaddon.esp", "2.0", >=)'
   - name: 'ImprovedClosefacedHelmets_WACCF.esp'
     msg: [ *obsolete ]
   - name: 'KatanaCrafting_WACCF_Patch.esp'
@@ -24851,7 +24853,7 @@ plugins:
         condition: 'active("Atlas Legendary.esp") and not active("UltimateCollege_AtlasLegendary_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Atlas Map Markers SE with MCM' ]
-        condition: 'active("Atlas Map Markers.esp") and not active("UltimateCollege_AtlasMapMarkersSE_Patch.esp")'
+        condition: 'active("atlas map markers.esp") and not active("UltimateCollege_AtlasMapMarkersSE_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Audio Overhaul for Skyrim SE' ]
         condition: 'active("Audio Overhaul Skyrim.esp") and not active("UltimateCollege_AudioOv_Patch.esp")'
@@ -24974,7 +24976,7 @@ plugins:
         condition: 'active("Weapons Armor Clothing & Clutter Fixes.esp") and not active("UltimateCollege_WACCF_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'WACCF - Armor and Clothing Extension' ]
-        condition: 'active("WACCF_Armor and Clothing Extension.esp") and not active("UltimateCollege_WACCFACE_Patch.esp")'
+        condition: 'active("waccf_armor and clothing extension.esp") and not active("UltimateCollege_WACCFACE_Patch.esp")'
       - <<: *patchIncluded
         subs: [ 'Windsong Immersive Character Overhaul' ]
         condition: 'active("WICO - Immersive People.esp") and not active("UltimateCollege_WICO_Patch.esp")'
